@@ -4,7 +4,7 @@ import Pages from "./Pages";
 import "./App.css";
 function App() {
   return (
-    <div>
+    <div className='Figma'>
       <Navbar/>
       <Pages/>
     </div>

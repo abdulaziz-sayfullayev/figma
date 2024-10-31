@@ -1,0 +1,140 @@
+/* Base Styles */
+.NavigationBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 312px;
+    background-color: rgb(7, 7, 6);
+    position: fixed;
+    width: 100%;
+    max-width: 1920px;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.content01 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.LogoDiv {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.LogoDiv:hover {
+    transform: scale(1.1);
+}
+
+.LogoDiv span {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.MenuCall {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links li a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffa600;
+}
+
+.CallA {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.CallA:hover {
+    color: #ffa600;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ecf0f1;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle:hover .bar {
+    background-color: #ffa600;
+}
+
+/* Responsive Styles */
+@media (max-width: 1650px) {
+    .NavigationBar {
+        padding: 24px 200px;
+    }
+}
+
+@media (max-width: 1360px) {
+    .NavigationBar {
+        padding: 24px 100px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background-color: rgb(7, 7, 6);
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .Call {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .NavigationBar {
+        padding: 16px 50px;
+    }
+}
