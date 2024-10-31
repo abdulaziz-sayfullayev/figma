@@ -1,0 +1,284 @@
+/* .Funfacts {
+    height: 218px;
+    display: flex;
+    padding: 0px 312px 0px 312px;
+    background: rgb(7, 7, 6);
+
+}
+
+.FunFact {
+    width: 1296px;
+    height: 218px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0px 56px 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.Fact1 {
+    width: 200px;
+    height: 106px;
+    display: flex;
+    gap: 8;
+    display: block;
+    padding: 0px;
+    margin: 0px 10px;
+}
+
+.Fact1>span {
+    width: 149px;
+    height: 72px;
+    display: flex;
+    gap: 8;
+    margin: 8px 0px;
+    color: rgb(255, 137, 17);
+    font-family: 'Syne';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: left;
+}
+
+.Fact1>p {
+    width: 200px;
+    height: 26px;
+    display: flex;
+    margin: 8px 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.Page2Line1 {
+    width: 80px;
+    height: 0;
+    margin: 0px 10px;
+    transform: rotate(90.00deg);
+    border: 1px solid rgb(71, 72, 74);
+}
+
+
+.Fact2 {
+    width: 200px;
+    height: 106px;
+    display: flex;
+    gap: 8;
+    display: block;
+    padding: 0px;
+    margin: 0px 10px;
+}
+
+.Fact2>span {
+    width: 149px;
+    height: 72px;
+    display: flex;
+    gap: 8;
+    margin: 8px 0px;
+    color: rgb(255, 137, 17);
+    font-family: 'Syne';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: left;
+}
+
+.Fact2>p {
+    width: 200px;
+    height: 26px;
+    display: flex;
+    margin: 8px 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.Page2Line2 {
+    width: 80px;
+    height: 0;
+    margin: 0px 10px;
+    transform: rotate(90.00deg);
+    border: 1px solid rgb(71, 72, 74);
+}
+
+.Fact3 {
+    width: 200px;
+    height: 106px;
+    display: flex;
+    gap: 8;
+    display: block;
+    padding: 0px;
+    margin: 0px 10px;
+}
+
+.Fact3>span {
+    width: 149px;
+    height: 72px;
+    display: flex;
+    gap: 8;
+    margin: 8px 0px;
+    color: rgb(255, 137, 17);
+    font-family: 'Syne';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: left;
+}
+
+.Fact3>p {
+    width: 200px;
+    height: 26px;
+    display: flex;
+    margin: 8px 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.Page2Line3 {
+    width: 80px;
+    height: 0;
+    margin: 0px 10px;
+    transform: rotate(90.00deg);
+    border: 1px solid rgb(71, 72, 74);
+}
+
+
+.Fact4 {
+    width: 200px;
+    height: 106px;
+    display: flex;
+    gap: 8;
+    display: block;
+    padding: 0px;
+    margin: 0px 10px;
+}
+
+.Fact4>span {
+    width: 149px;
+    height: 72px;
+    display: flex;
+    gap: 8;
+    margin: 8px 0px;
+    color: rgb(255, 137, 17);
+    font-family: 'Syne';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: left;
+}
+
+.Fact4>p {
+    width: 200px;
+    height: 26px;
+    display: flex;
+    margin: 8px 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+} */
+
+
+
+.funfacts-section {
+    background-color: rgb(7, 7, 6);
+    padding: 40px 312px;
+    display: flex;
+    justify-content: center;
+}
+
+.Funfacts {
+    height: 218px;
+    display: flex;
+    background: rgb(7, 7, 6);
+}
+
+.FunFact {
+    width: 1296px;
+    height: 218px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.Fact {
+    width: 200px;
+    height: 106px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 10px;
+}
+
+.Fact > span {
+    color: rgb(255, 137, 17);
+    font-family: 'Syne';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: left;
+}
+
+.Fact > p {
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.divider {
+    width: 80px;
+    border: 1px solid rgb(71, 72, 74);
+    transform: rotate(90deg);
+    margin: 0px 10px;
+}
+
+@media (max-width: 1440px) {
+    .funfacts-section {
+        padding: 40px 200px;
+    }
+    .Funfacts {
+        padding: 0 200px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .funfacts-section {
+        padding: 40px 50px;
+    }
+    .Funfacts {
+        padding: 0 50px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .FunFact {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .divider {
+        width: 60px;
+        height: 1px;
+        transform: rotate(0deg);
+    }
+}
