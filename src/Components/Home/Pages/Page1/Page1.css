@@ -1,0 +1,362 @@
+.hero-section {
+    padding-top: 75px;
+    z-index: 1;
+}
+
+.background {
+    width: 100%;
+    height: 900px;
+    background-image: url('../../Assets/Home1BG1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    max-width: 1522px;
+    height: 733px;
+    margin: 0 auto;
+    padding: 0 86px;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content {
+    max-width: 657px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 23px;
+    margin-left: 35px;
+    gap: 24px;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.title-bar {
+    width: 45px;
+    height: 2px;
+    background-color: rgb(127, 39, 255);
+}
+
+.title span {
+    color: rgb(127, 39, 255);
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.main-text p {
+    font-family: 'Syne', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 88px;
+    color: rgb(26, 29, 39);
+}
+
+.main-text span {
+    background: rgb(255, 137, 17);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.description {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    color: rgba(26, 29, 39, 0.8);
+    line-height: 24px;
+    opacity: 0.8;
+    width: 605px;
+}
+
+.button-container {
+    display: flex;
+}
+
+.explore-btn,
+.video-btn {
+    padding: 16px 32px;
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    width: 232px;
+
+}
+
+.explore-btn {
+    background: rgb(7, 7, 6);
+    color: white;
+}
+
+.explore-btn:hover {
+    background-color: #ffa600;
+}
+
+.video-btn {
+    display: flex;
+    align-items: center;
+    color: rgb(26, 29, 39);
+    background-color: transparent;
+}
+
+.video-btn .imgiii {
+    width: 40px;
+    margin-right: 8px;
+    font-size: 15px;
+    transition: transform 0.3s ease;
+}
+
+.video-btn:hover .imgiii {
+    font-size: scale(1.1);
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    color: #ffa600;
+}
+
+.image-container {
+    display: flex;
+    width: 882px;
+    justify-content: center;
+    margin-left: 70px;
+    position: relative;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.card {
+    width: 100%;
+    height: 733px;
+    background-image: url('../../Assets/Page1Team.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card-image-main {
+    width: 226px;
+    height: 115px;
+    position: absolute;
+    bottom: 50px;
+    left: -90px;
+    border-radius: 6px;
+    animation: bounceIn 1s ease-in-out;
+}
+
+.card-image-icon {
+    width: 203px;
+    height: 134px;
+    position: absolute;
+    top: 290px;
+    right: -50px;
+    animation: bounceIn 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 1560px) {
+    .content {
+        padding: 0 50px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .text-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-container {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-text p {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .explore-btn,
+    .video-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-text p {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .explore-btn,
+    .video-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+
+
+/* Max-width: 1280px uchun media qoidasi */
+@media (max-width: 1280px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 40px;
+        gap: 30px;
+    }
+    .main-text p {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .text-content {
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+    .image-container {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+/* Max-width: 1024px uchun media qoidasi */
+@media (max-width: 1024px) {
+    .content {
+        padding: 0 30px;
+    }
+    .main-text p {
+        font-size: 54px;
+        line-height: 64px;
+    }
+    .description {
+        font-size: 15px;
+    }
+    .button-container {
+        gap: 20px;
+    }
+    .explore-btn,
+    .video-btn {
+        width: 200px;
+    }
+}
+
+/* Max-width: 640px uchun media qoidasi */
+@media (max-width: 640px) {
+    .main-text p {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .description {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .button-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .explore-btn,
+    .video-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+/* Max-width: 360px uchun media qoidasi */
+@media (max-width: 360px) {
+    .main-text p {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .explore-btn,
+    .video-btn {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+    .title-bar {
+        width: 30px;
+    }
+    .description {
+        font-size: 12px;
+    }
+}
