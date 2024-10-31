@@ -19,7 +19,7 @@ function Navbar() {
             </div>
             <div className="MenuCall">
               <div className={`Menu ${isMobileMenuOpen ? "active" : ""}`}>
-                <ul className="nav-links">
+                <ul className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}>
                   <li>
                     <a href="#">Home</a>
                   </li>
@@ -37,6 +37,7 @@ function Navbar() {
                   </li>
                 </ul>
               </div>
+
               <div className="Call">
                 <a className="CallA" href="tel:+998912800562">
                   <IoCallSharp />
