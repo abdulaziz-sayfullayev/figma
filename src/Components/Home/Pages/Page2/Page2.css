@@ -192,7 +192,7 @@
 
 
 
-.funfacts-section {
+/* .funfacts-section {
     background-color: rgb(7, 7, 6);
     padding: 40px 312px;
     display: flex;
@@ -280,5 +280,156 @@
         width: 60px;
         height: 1px;
         transform: rotate(0deg);
+    }
+} */
+
+
+
+.funfacts-section {
+    background-color: rgb(7, 7, 6);
+    padding: 40px 312px;
+    display: flex;
+    justify-content: center;
+}
+
+.Funfacts {
+    height: auto;
+    /* Changed to auto for better adaptability */
+    display: flex;
+    background: rgb(7, 7, 6);
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+}
+
+.FunFact {
+    width: 100%;
+    /* Full width for better responsiveness */
+    max-width: 1296px;
+    /* Maximum width */
+    height: auto;
+    /* Changed to auto for better adaptability */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0;
+    margin: 10px 0;
+}
+
+.Fact {
+    width: 200px;
+    max-width: 100px;
+    /* Set maximum width to 100px */
+    height: auto;
+    /* Changed to auto for better adaptability */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 10px;
+}
+
+.Fact>span {
+    color: rgb(255, 137, 17);
+    font-family: 'Syne';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: left;
+}
+
+.Fact>p {
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.divider {
+    width: 80px;
+    border: 1px solid rgb(71, 72, 74);
+    transform: rotate(90deg);
+    margin: 0px 10px;
+}
+
+@media (max-width: 1440px) {
+    .funfacts-section {
+        padding: 40px 200px;
+    }
+
+    .FunFact {
+        padding: 40px 0;
+        /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .funfacts-section {
+        padding: 40px 50px;
+    }
+
+    .FunFact {
+        padding: 30px 0;
+        /* Further reduced padding */
+    }
+
+    .Fact {
+        width: 100%;
+        /* Full width for smaller screens */
+        max-width: 100px;
+        /* Maintain maximum width of 100px */
+    }
+}
+
+@media (max-width: 768px) {
+    .FunFact {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        /* Center items in column layout */
+    }
+
+    .divider {
+        width: 60px;
+        height: 1px;
+        transform: rotate(0deg);
+    }
+
+    .Fact {
+        width: 100%;
+        /* Full width on small screens */
+        max-width: 100px;
+        /* Maintain maximum width of 100px */
+        align-items: center;
+        /* Center align text */
+    }
+
+    .Fact>span {
+        font-size: 48px;
+        /* Reduce font size */
+    }
+
+    .Fact>p {
+        font-size: 16px;
+        /* Adjust paragraph font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .FunFact {
+        padding: 20px 0;
+        /* Further reduced padding */
+    }
+
+    .Fact>span {
+        font-size: 36px;
+        /* Smaller font size for very small screens */
+        line-height: 48px;
+        /* Adjust line height */
+    }
+
+    .Fact>p {
+        font-size: 14px;
+        /* Smaller paragraph font size */
     }
 }

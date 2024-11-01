@@ -94,6 +94,7 @@
 
 .button-container {
     display: flex;
+    gap: 16px;
 }
 
 .explore-btn,
@@ -108,7 +109,6 @@
     border-radius: 6px;
     transition: all 0.3s ease;
     width: 232px;
-
 }
 
 .explore-btn {
@@ -135,9 +135,7 @@
 }
 
 .video-btn:hover .imgiii {
-    font-size: scale(1.1);
-    font-size: 20px;
-    transition: transform 0.3s ease;
+    transform: scale(1.1);
     color: #ffa600;
 }
 
@@ -160,14 +158,18 @@
     position: relative;
 }
 
+.card-image-main,
+.card-image-icon {
+    border-radius: 6px;
+    animation: bounceIn 1s ease-in-out;
+}
+
 .card-image-main {
     width: 226px;
     height: 115px;
     position: absolute;
     bottom: 50px;
     left: -90px;
-    border-radius: 6px;
-    animation: bounceIn 1s ease-in-out;
 }
 
 .card-image-icon {
@@ -176,7 +178,6 @@
     position: absolute;
     top: 290px;
     right: -50px;
-    animation: bounceIn 1s ease-in-out;
 }
 
 @keyframes fadeInLeft {
@@ -219,7 +220,14 @@
     }
 }
 
+/* Responsive styles */
 @media (max-width: 1560px) {
+    .hero-section{
+        margin-top: -400px;
+    }
+    .background{
+        height: 1800px;
+    }
     .content {
         padding: 0 50px;
         flex-direction: column;
@@ -238,7 +246,37 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+    .main-text p {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content {
+        padding: 0 30px;
+    }
+
+    .main-text p {
+        font-size: 54px;
+        line-height: 64px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .button-container {
+        gap: 20px;
+    }
+
+    .explore-btn {
+        width: auto;
+    }
+}
+
+@media (max-width: 900px) {
     .main-text p {
         font-size: 48px;
         line-height: 56px;
@@ -261,7 +299,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     .main-text p {
         font-size: 36px;
         line-height: 44px;
@@ -274,67 +312,24 @@
     }
 }
 
-
-
-/* Max-width: 1280px uchun media qoidasi */
-@media (max-width: 1280px) {
+@media (max-width: 700px) {
     .content {
-        flex-direction: column;
-        align-items: center;
-        padding: 0 40px;
-        gap: 30px;
+        padding: 0 20px;
     }
+
     .main-text p {
-        font-size: 60px;
-        line-height: 70px;
-    }
-    .text-content {
-        align-items: center;
-        text-align: center;
-        margin-left: 0;
-    }
-    .image-container {
-        width: 100%;
-        margin-left: 0;
-        justify-content: center;
+        font-size: 32px;
+        line-height: 40px;
     }
 }
 
-/* Max-width: 1024px uchun media qoidasi */
-@media (max-width: 1024px) {
-    .content {
-        padding: 0 30px;
-    }
-    .main-text p {
-        font-size: 54px;
-        line-height: 64px;
-    }
+@media (max-width: 600px) {
     .description {
-        font-size: 15px;
-    }
-    .button-container {
-        gap: 20px;
-    }
-    .explore-btn,
-    .video-btn {
-        width: 200px;
+        font-size: 12px;
     }
 }
 
-/* Max-width: 640px uchun media qoidasi */
-@media (max-width: 640px) {
-    .main-text p {
-        font-size: 40px;
-        line-height: 48px;
-    }
-    .description {
-        font-size: 13px;
-        line-height: 20px;
-    }
-    .button-container {
-        flex-direction: column;
-        gap: 12px;
-    }
+@media (max-width: 500px) {
     .explore-btn,
     .video-btn {
         padding: 8px 16px;
@@ -342,21 +337,58 @@
     }
 }
 
-/* Max-width: 360px uchun media qoidasi */
-@media (max-width: 360px) {
+@media (max-width: 400px) {
     .main-text p {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 28px;
+        line-height: 36px;
     }
+
+    .title span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 300px) {
+    .description {
+        font-size: 10px;
+    }
+
+    .main-text p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 250px) {
     .explore-btn,
     .video-btn {
         padding: 6px 12px;
         font-size: 11px;
     }
-    .title-bar {
-        width: 30px;
+}
+
+@media (max-width: 200px) {
+    .title span {
+        font-size: 14px;
     }
+
+    .main-text p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 150px) {
+    .main-text p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 100px) {
+    .main-text p {
+        font-size: 18px;
+    }
+
     .description {
-        font-size: 12px;
+        font-size: 9px;
     }
 }

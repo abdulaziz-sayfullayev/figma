@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import "./Page2.css";
 
 function Counter({ endValue, duration }) {
   const [value, setValue] = useState(0);
+  const counterRef = useRef(null);
 
   useEffect(() => {
     let start = 0;
     const increment = endValue / (duration * 60);
-
     const counter = setInterval(() => {
       start += increment;
       if (start >= endValue) {
@@ -21,13 +21,30 @@ function Counter({ endValue, duration }) {
     return () => clearInterval(counter);
   }, [endValue, duration]);
 
-  return <span>{value}{endValue >= 100 ? "+" : "%"}</span>;
+  return <span className="counter">{value}{endValue >= 100 ? "+" : "%"}</span>;
 }
 
 function Page2() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    const section = document.querySelector('.funfacts-section');
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      setIsVisible(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
-      <section className="funfacts-section">
+      <section className={`funfacts-section ${isVisible ? 'visible' : ''}`}>
         <div className="Funfacts">
           <div className="FunFact">
             <div className="Fact">
