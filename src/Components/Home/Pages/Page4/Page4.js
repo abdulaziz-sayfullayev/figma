@@ -130,7 +130,7 @@ function Page4() {
                             </div>
                             <div className='aaazzz'>
                                 <div className="divv">
-                                    <div className='Service00101'>
+                                    <div className='Cardds'>
                                         <div class="Service01">
                                             <div class="FrameService">
                                                 <div class="Icon01">
@@ -155,69 +155,68 @@ function Page4() {
                                             </div>
                                         </div>
                                         <div className='AzzHover'>
-                                            <span>View all services</span>
+                                            <h6>View all services</h6>
                                         </div>
                                     </div>
-                                    <div className='Service00102'>
-                                        <div>
-                                            <div class="Service01">
-                                                <div class="FrameService">
-                                                    <div class="Icon01">
-                                                        <span class="Icon001">
-                                                            <img src={ICON11} alt="" />
-                                                        </span>
+                                    <div className='Cardds'>
+                                        <div class="Service01">
+                                            <div class="FrameService">
+                                                <div class="Icon01">
+                                                    <span class="Icon001">
+                                                        <img src={ICON11} alt="" />
+                                                    </span>
+                                                </div>
+                                                <div class="Txt9">
+                                                    <div class="Txt10">
+                                                        <span>Cyber security</span>
+                                                        <p>
+                                                            Assertively streamline interactive interfaces after
+                                                            value-added infrastructures.
+                                                        </p>
                                                     </div>
-                                                    <div class="Txt9">
-                                                        <div class="Txt10">
-                                                            <span>Network solution</span>
-                                                            <p>
-                                                                Assertively streamline interactive interfaces after
-                                                                value-added infrastructures.
-                                                            </p>
-                                                        </div>
-                                                        <div class="Action1">
-                                                            <button>
-                                                                <i class="fa-solid fa-arrow-up-right"> </i>LEARN MORE
-                                                            </button>
-                                                        </div>
+                                                    <div class="Action1">
+                                                        <button>
+                                                            <i class="fa-solid fa-arrow-up-right"> </i>LEARN MORE
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className='AzzHover'>
-                                                <span>View all services</span>
-                                            </div>
                                         </div>
                                         <div className='AzzHover'>
-                                            <span>View all services</span>
+                                            <h6>View all services</h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='divv2'>
-                                    <div class="Service01">
-                                        <div class="FrameService">
-                                            <div class="Icon01">
-                                                <span class="Icon001">
-                                                    <img src={ICON11} alt="" />
-                                                </span>
-                                            </div>
-                                            <div class="Txt9">
-                                                <div class="Txt10">
-                                                    <span>Network solution</span>
-                                                    <p>
-                                                        Assertively streamline interactive interfaces after
-                                                        value-added infrastructures.
-                                                    </p>
+                                    <div className='Cardds'>
+                                        <div class="Service01">
+                                            <div class="FrameService">
+                                                <div class="Icon01">
+                                                    <span class="Icon001">
+                                                        <img src={ICON11} alt="" />
+                                                    </span>
                                                 </div>
-                                                <div class="Action1">
-                                                    <button>
-                                                        <i class="fa-solid fa-arrow-up-right"> </i>LEARN MORE
-                                                    </button>
+                                                <div class="Txt9">
+                                                    <div class="Txt10">
+                                                        <span>Data Analytics</span>
+                                                        <p>
+                                                            Assertively streamline interactive interfaces after
+                                                            value-added infrastructures.
+                                                        </p>
+                                                    </div>
+                                                    <div class="Action1">
+                                                        <button>
+                                                            <i class="fa-solid fa-arrow-up-right"> </i>LEARN MORE
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div className='AzzHover'>
+                                            <h6>View all services</h6>
+                                        </div>
                                     </div>
-                                    <div>
-
+                                    <div className='Cardds'>
                                         <div class="Service01">
                                             <div class="FrameService">
                                                 <div class="Icon01">
@@ -242,7 +241,7 @@ function Page4() {
                                             </div>
                                         </div>
                                         <div className='AzzHover'>
-                                            <span>View all services</span>
+                                            <h6>View all services</h6>
                                         </div>
                                     </div>
                                 </div>

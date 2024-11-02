@@ -121,19 +121,15 @@
     height: 46px;
     margin: 16px 0px;
 }
-.Service01:nth-child(1){
-    margin-top: 65px;
-    margin-bottom: 50px;
+
+.Service01:nth-child(1) {
+    margin-top: 56px;
 }
+
 .Service01 {
     width: 280px;
     height: 360px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 24px;
     border-radius: 16px;
-    background: rgb(236, 238, 242);
 }
 
 .FrameService {
@@ -273,18 +269,58 @@
     background: rgb(73, 52, 219);
     color: white;
 }
-.aaazzz{
+
+.aaazzz {
     display: flex;
 }
-/* .divv{}
 
-.Service00101{
-    
-} */
-
-.AzzHover{
-    display: none;
+.divv{
 }
-.divv2{
-    margin-top: 150px;
+
+
+.divv2 {
+    margin-top: 128px;
+    margin-left: 40px;
+}
+
+.Service01,
+.AzzHover {
+    transition: opacity 0.3s;
+}
+
+.Service01 {
+    opacity: 1;
+}
+
+.AzzHover {
+    opacity: 0;
+}
+
+.Cardds {
+    border-radius: 16px;
+    background: rgb(236, 238, 242);
+}
+
+.Cardds:hover {
+    background: rgb(255, 137, 17);
+}
+
+.Cardds:hover .Service01 {
+    opacity: 0;
+}
+
+.Cardds:hover .AzzHover {
+    opacity: 1;
+}
+
+.AzzHover>h6 {
+    color: rgb(7, 7, 6);
+    font-family: 'Syne';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    width: 258px;
+    height: 28px;
+    margin-left: 14px;
+    margin-top: -46px;
 }
