@@ -45,7 +45,7 @@ function Page1() {
                         </div>
                     </div>
                     <div className="image-container">
-                        <div className="card">
+                        <div className="cardHome1Page1">
                             <img src={Page1Team} alt="Team" className="card-image-main" />
                             <img src={Page1Card} alt="Card" className="card-image-icon" />
                         </div>

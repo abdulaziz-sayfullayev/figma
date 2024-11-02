@@ -1,0 +1,290 @@
+.ServiceSection {
+    height: 1184px;
+}
+
+.BGPage4Home1 {
+    background: rgb(7, 7, 6);
+    height: 1184px;
+}
+
+.Content001Page4Home1 {
+    width: 1296px;
+    height: 904px;
+    display: flex;
+    padding: 140px 252px;
+}
+
+.Textss {
+    width: 580px;
+    height: 855px;
+    margin: 0px 64px;
+}
+
+.Textsss {
+    width: 580px;
+    height: 418px;
+    margin: 64px 0px;
+}
+
+.Heading {
+    width: 580px;
+    height: 330px;
+    margin: 16px 0px;
+}
+
+.Title001ss {
+    width: 91px;
+    height: 26px;
+    margin: 16px 0px;
+
+}
+
+.Title001ss>span {
+    width: 91px;
+    height: 26px;
+    /* margin: 0px 12px; */
+    color: rgb(255, 137, 17);
+    font-family: 'Syne';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+
+}
+
+.Heading>p {
+    width: 580px;
+    height: 288px;
+    margin: 16px 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    text-transform: capitalize;
+}
+
+.Textsss>p {
+    width: 520px;
+    height: 72px;
+    margin: 16px 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.ServiceFeature {
+    width: 580px;
+    height: 373px;
+    margin: 64px 0px;
+}
+
+.Feature001 {
+    width: 580px;
+    height: 90px;
+    display: flex;
+    margin: 40px 0px;
+}
+
+.Iconsss {
+    width: 34px;
+    height: 34px;
+}
+
+.Text909sss {
+    width: 522px;
+    height: 90px;
+    margin: 0px 24px;
+}
+
+.Text909sss>span {
+    width: 522px;
+    height: 28px;
+    margin: 16px 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: capitalize;
+
+}
+
+.Text909sss>p {
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    width: 522px;
+    height: 46px;
+    margin: 16px 0px;
+}
+.Service01:nth-child(1){
+    margin-top: 65px;
+    margin-bottom: 50px;
+}
+.Service01 {
+    width: 280px;
+    height: 360px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+    border-radius: 16px;
+    background: rgb(236, 238, 242);
+}
+
+.FrameService {
+    width: 200px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 70;
+    padding: 0px;
+}
+
+.Icon01 {
+    width: 72px;
+    height: 72px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background: rgba(26, 29, 39, 0.9);
+    margin: 40px 24px;
+    border-radius: 50%;
+}
+
+.Icon001 {
+    width: 32px;
+    height: 32px;
+}
+
+.Icon001>img {
+    margin: 20px 7px 20px 22px;
+}
+
+.Txt9 {
+    width: 258px;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16;
+    padding: 0px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 70px 0px;
+}
+
+.Viewallservices {
+    display: block;
+}
+
+.Txt10 {
+    width: 258px;
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4;
+    padding: 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: -36px 22px;
+}
+
+.Txt10>span {
+    width: 258px;
+    height: 28px;
+    gap: 4;
+    margin: -14px 0px;
+    color: rgb(26, 29, 39);
+    font-family: 'Syne';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.Txt10>p {
+    color: rgba(26, 29, 39, 0.6);
+    font-family: 'Syne';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 258px;
+    height: 72px;
+    flex-grow: 0;
+    margin: 20px 0px;
+}
+
+.Action1 {
+    width: 147px;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8;
+    padding: 0px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.Action1>button {
+    width: 111px;
+    height: 16px;
+    padding: 0px;
+    flex: none;
+    color: rgb(73, 52, 219);
+    font-family: 'Syne';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    margin: 72px 111px 30px 24px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.fa-arrow-up-right {
+    cursor: pointer;
+}
+
+.Viewallservices {
+    width: 306px;
+    height: 360px;
+    order: 3;
+    cursor: pointer;
+    flex-grow: 0;
+    margin: 0px 24px;
+    flex: none;
+    border-radius: 16px;
+    background: rgb(73, 52, 219);
+    color: white;
+}
+.aaazzz{
+    display: flex;
+}
+.divv{}
+
+.Service00101{
+    
+}
+
+.AzzHover{
+    display: none;
+}
+.divv2{
+    margin-top: 150px;
+}
