@@ -1,0 +1,36 @@
+/* Container for each card */
+.divCarrddSSS {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Main content of the card (image and text) */
+  .ProjectCartSSS {
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Overlay with "View all services" text */
+  .AzizCardSSS {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background on hover */
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .divCarrddSSS:hover .ProjectCartSSS {
+    opacity: 0; /* Hide the main content */
+  }
+  
+  .divCarrddSSS:hover .AzizCardSSS {
+    opacity: 1; /* Show "View all services" text */
+  }
+  
