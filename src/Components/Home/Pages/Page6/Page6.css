@@ -1,35 +1,9 @@
-/* .divCarrddSSS {
-  overflow: hidden;
-}
-
-.ProjectCartSSS {
-  transition: opacity 0.3s ease;
-}
-
-.AzizCardSSS {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.divCarrddSSS:hover .ProjectCartSSS {
-  opacity: 0;
-}
-
-.divCarrddSSS:hover .AzizCardSSS {
-  opacity: 1;
-} */
-
 .ProjectsSetion {
   height: 1426px;
   margin-top: -300px;
 }
 
-.BG {
+.BGDDDD {
   height: 1426px;
   background: rgb(7, 7, 6);
   margin: 10px 0px;

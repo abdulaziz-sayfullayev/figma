@@ -6,7 +6,7 @@ function Page11() {
       <section>
         <div className="CTAASSS">
           <div className="ContentSASSS">
-            <span>Looking for the best IT business solutions?</span>
+            <h1>Looking for the best IT business solutions?</h1>
             <div className="buttonssss">
               <button>Contact Us</button>
             </div>

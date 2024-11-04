@@ -1,0 +1,45 @@
+.CTAASSS {
+    height: 472px;
+    background: url('../../Assets/CTA.png');
+    padding: 120px 546px 217px 546px;
+    margin-top: 140px;
+}
+
+.ContentSASSS {
+    width: 828px;
+    height: 232px;
+}
+
+.ContentSASSS>h1 {
+    width: 828px;
+    height: 144px;
+    margin: 32px 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 72px;
+    text-transform: capitalize;
+}
+
+.buttonssss>button {
+    width: 186px;
+    height: 56px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 6px;
+    background: rgb(7, 7, 6);
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.buttonssss{
+    margin: 32px 321px;
+}

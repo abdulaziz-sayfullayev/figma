@@ -1,11 +1,15 @@
-import React from 'react'
-
+import React from 'react';
+import { GoArrowUpRight } from "react-icons/go";
+import Card1 from "../../Assets/Image (16).png";
+import Card2 from "../../Assets/Image (17).png";
+import Card3 from "../../Assets/Image (18).png";
+import "./Page10.css";
 function Page10() {
   return (
     <div>
       <section>
-        <div className="BlogSection">
-          <div className="BGFDF">
+        <div className="BlogSectionSSS">
+          <div className="BGFDFDDD">
             <div className="ContentPage10Home1">
               <div className="Title1111">
                 <div className="Text00112SSS">
@@ -18,12 +22,15 @@ function Page10() {
                   <p>Assertively streamline interactive interfaces after value a infrastructures. Authoritatively fabricate fully tested methodologies before Holistic deliver end-to-end architectures rather sound benefits.</p>
                 </div>
                 <div className="ActionSSSSSS">
+                  <p>
+                    <GoArrowUpRight className='GoArrowUpRight' />
+                  </p>
                   <span>VIEW ALL</span>
                 </div>
               </div>
               <div className="BlogCarts0SSS">
                 <div className="BlogCartPage10HomeSSS1">
-                  <img src="" alt="" />
+                  <img src={Card1} alt="" />
                   <div className="TExtssss">
                     <span>November 21, 2022- Tom Black</span>
                     <div className="FrameSSSS001">
@@ -32,8 +39,8 @@ function Page10() {
                     </div>
                   </div>
                 </div>
-                <div className="BlogCartPage10HomeSSS2">
-                  <img src="" alt="" />
+                <div className="BlogCartPage10HomeSSS1">
+                  <img src={Card2} alt="" />
                   <div className="TExtssss">
                     <span>November 21, 2022- Tom Black</span>
                     <div className="FrameSSSS001">
@@ -42,8 +49,8 @@ function Page10() {
                     </div>
                   </div>
                 </div>
-                <div className="BlogCartPage10HomeSSS3">
-                  <img src="" alt="" />
+                <div className="BlogCartPage10HomeSSS1">
+                  <img src={Card3} alt="" />
                   <div className="TExtssss">
                     <span>Building Data Analytics Software</span>
                     <div className="FrameSSSS001">

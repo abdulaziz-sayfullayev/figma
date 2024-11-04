@@ -38,8 +38,8 @@ function Page6() {
   return (
     <div>
       <section>
-        <div className="ProjectsSetion">
-          <div className="BG">
+        <div className="ProjectsSetion111">
+          <div className="BGDDDD">
             <div className="Content001001">
               <div className="Text00101">
                 <div className="Heading00221">

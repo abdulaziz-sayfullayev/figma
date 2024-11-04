@@ -1,0 +1,170 @@
+.BlogSectionSSS {
+    height: 1090px;
+    margin-bottom: 100px;
+}
+
+.BGFDFDDD {
+    height: 1230px;
+    background: rgb(7, 7, 6);
+
+}
+
+.ContentPage10Home1 {
+    width: 1296px;
+    height: 810px;
+    margin: 10px 0px;
+    padding: 140px 312px;
+}
+
+.Title1111 {
+    width: 1296px;
+    height: 178px;
+    margin: 56px 0px;
+    display: flex;
+}
+
+.Text00112SSS {
+    width: 796px;
+    height: 178px;
+}
+
+.HeadingSSS {
+    width: 796px;
+    height: 114px;
+    margin: 16px 0px;
+}
+
+.TitleSSSS {
+    width: 197px;
+    height: 26px;
+    margin: 16px 0px;
+}
+
+.TitleSSSS>span {
+    width: 197px;
+    height: 26px;
+    color: rgb(255, 137, 17);
+    font-family: 'Syne';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.HeadingSSS>span {
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    text-transform: capitalize;
+    width: 796px;
+    height: 72px;
+    margin: 16px 0px;
+}
+
+.Text00112SSS>p {
+    width: 736px;
+    height: 48px;
+    margin: 16px 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.ActionSSSSSS {
+    width: 166px;
+    height: 28px;
+    cursor: pointer;
+    margin-left: 385px;
+    display: flex;
+    margin-top: 170px;
+}
+
+.ActionSSSSSS>span {
+    font-family: 'Syne';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1px;
+    width: 150px;
+    height: 16px;
+    color: rgb(255, 137, 17);
+}
+
+.GoArrowUpRight {
+    font-family: 'Syne';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1px;
+    width: 30px;
+    height: 16px;
+    color: rgb(255, 137, 17);
+}
+
+
+.BlogCarts0SSS {
+    width: 1296px;
+    height: 576px;
+    display: flex;
+    margin: 56px 0px;
+    gap: 24px;
+}
+
+.BlogCartPage10HomeSSS1 {
+    width: 416px;
+    height: 576px;
+}
+
+.BlogCartPage10HomeSSS1>img {
+    width: 416px;
+    height: 400px;
+    margin: 32px 0px;
+}
+
+.TExtssss {
+    width: 416px;
+    height: 144px;
+    margin: 32px 0px;
+}
+
+.TExtssss>span {
+    width: 172px;
+    height: 16px;
+    margin: 8px 0px;
+    color: rgb(255, 137, 17);
+    font-family: 'Syne';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.FrameSSSS001 {
+    width: 416px;
+    height: 120px;
+    margin: 8px 0px;
+}
+
+.FrameSSSS001>span {
+    width: 416px;
+    height: 56px;
+    margin: 16px 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.FrameSSSS001>p {
+    width: 416px;
+    height: 48px;
+    margin: 16px 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Syne';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}

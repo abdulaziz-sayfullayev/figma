@@ -24,8 +24,8 @@ function Home() {
       <Page7 />
       <Page8 />
       <Page9 />
-      {/* <Page10 /> */}
-      {/* <Page11 /> */}
+      <Page10 />
+      <Page11 />
     </div>
   )
 }
