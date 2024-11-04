@@ -1,0 +1,199 @@
+.GetInTouch {
+    height: 1072px;
+    margin: 140px 312px 140px 0px;
+    display: flex;
+}
+
+.Image {
+    width: 944px;
+    height: 792px;
+    margin: 0px 138px;
+}
+
+.BacgroudBlack {
+    width: 880px;
+    height: 664px;
+    border-radius: 0px 16px 16px 0px;
+}
+
+.Imgwww {
+    width: 880px;
+    height: 664px;
+    display: flex;
+}
+
+.Imgwww>img {
+    width: 1000px;
+    height: 603px;
+    z-index: 10;
+    margin-top: 88px;
+    margin-left: -138px;
+    background-position: center;
+    background-size: cover;
+}
+
+.BG {
+    width: 400px;
+    height: 780px;
+    margin-left: -350px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 16px;
+    background-image: url('../../Assets/BG\(5\).png');
+
+}
+
+
+.ProgressSSS1 {
+    position: absolute;
+    width: 216px;
+    height: 230px;
+    border-radius: 8px;
+    background: rgb(255, 137, 17);
+    margin-top: 422px;
+    margin-left: 100px;
+    z-index: 11;
+}
+
+.ProgressSSS {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    background-color: #ff7f00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+    z-index: 15;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.GroupSSS {
+    color: rgb(18, 18, 18);
+    font-family: 'Syne';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20.61px;
+    width: 96.05px;
+    height: 41.98px;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.progress-circle {
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.percentage-text {
+    color: rgb(26, 29, 39);
+    font-family: 'Syne';
+    font-size: 20.61px;
+    font-weight: 700;
+    line-height: 29.77px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+
+.TxtASS {
+    width: 526px;
+    height: 664px;
+    margin: 0px 138px;
+}
+
+
+.TxtASS01 {
+    width: 526px;
+    height: 194px;
+    margin: 30px 0px;
+}
+
+.TxtASS01Sivsss {
+    width: 150px;
+    height: 26px;
+    margin: 24px 0px;
+}
+
+.TxtASS01Sivsss>span {
+    color: rgb(127, 39, 255);
+    font-family: 'Syne';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    width: 150px;
+    height: 26px;
+}
+
+.TxtASS01>h3 {
+    width: 526px;
+    height: 144px;
+    margin: 24px 0px;
+    color: rgb(26, 29, 39);
+    font-family: 'Syne';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+.FormSSS {
+    width: 526px;
+    height: 440px;
+    margin: 30px 0px;
+}
+
+.InputSSS {
+    width: 526px;
+    height: 364px;
+    margin: 20px 0px;
+}
+
+.textname {
+    width: 526px;
+    height: 56px;
+    margin: 12px 0px;
+    box-sizing: border-box;
+    border: 1px solid rgba(26, 29, 39, 0.4);
+    border-radius: 4px;
+    color: rgba(26, 29, 39, 0.4);
+    font-family: 'Syne';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 16px;
+    outline: none;
+
+}
+
+.textarea {
+    width: 526px;
+    height: 160px;
+    box-sizing: border-box;
+    border: 1px solid rgba(26, 29, 39, 0.4);
+    border-radius: 4px;
+
+}
+
+.buttonsss>button {
+    border-radius: 4px;
+    width: 526px;
+    cursor: pointer;
+    padding: 20px 40px 20px 40px;
+    height: 56px;
+    background: rgb(255, 137, 17);
+    color: rgb(7, 7, 6);
+    font-family: 'Syne';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+}

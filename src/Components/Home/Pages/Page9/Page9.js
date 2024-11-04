@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import "./Page9.css";
 import IMGSS from "../../Assets/image 81.png";
+
 function Page9() {
-  const [progress, setProgress] = useState(0); // Start from 0%
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    // Target progress value
-    const targetProgress = 75;
-    const duration = 2000; // Duration of the animation in milliseconds
-    const interval = 20; // Update interval in milliseconds
-    const increment = targetProgress / (duration / interval); // Calculate increment per interval
+    const targetProgress = 75; // Target progress percentage
+    const duration = 2000; // Duration in milliseconds for the animation
+    const interval = 20; // Interval in milliseconds for the update
+    const increment = targetProgress / (duration / interval); // Increment value
 
     const timer = setInterval(() => {
       setProgress((prevProgress) => {
@@ -21,14 +21,14 @@ function Page9() {
       });
     }, interval);
 
-    return () => clearInterval(timer); // Cleanup on component unmount
+    return () => clearInterval(timer); // Cleanup on unmount
   }, []);
 
   const strokeWidth = 8;
   const radius = 45;
-  const normalizedRadius = radius - strokeWidth * 0.5;
-  const circumference = normalizedRadius * 2 * Math.PI;
-  const strokeDashoffset = circumference - (progress / 100) * circumference;
+  const normalizedRadius = radius - strokeWidth * 0.5; // Adjust for stroke width
+  const circumference = normalizedRadius * 2 * Math.PI; // Calculate circumference
+  const strokeDashoffset = circumference - (progress / 100) * circumference; // Calculate offset for stroke
 
   return (
     <div>
@@ -38,33 +38,42 @@ function Page9() {
             <div className="BacgroudBlack">
               <div className="Imgwww">
                 <img src={IMGSS} alt="" />
-                <div className="ProgressSSS" style={{ position: 'relative', width: '120px', height: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <div className="GroupSSS" style={{ position: 'absolute', top: '-20px', textAlign: 'center', fontSize: '14px', color: 'black' }}>
-                    <span>Weekly Progress</span>
-                  </div>
-                  <svg height={radius * 2} width={radius * 2} style={{ position: 'absolute' }}>
-                    <circle
-                      stroke="#E6E6E6"
-                      fill="transparent"
-                      strokeWidth={strokeWidth}
-                      r={normalizedRadius}
-                      cx={radius}
-                      cy={radius}
-                    />
-                    <circle
-                      stroke="#000000"
-                      fill="transparent"
-                      strokeWidth={strokeWidth}
-                      strokeDasharray={`${circumference} ${circumference}`}
-                      strokeDashoffset={strokeDashoffset}
-                      r={normalizedRadius}
-                      cx={radius}
-                      cy={radius}
-                      style={{ transition: 'stroke-dashoffset 0.5s ease', transform: 'rotate(-90deg)', transformOrigin: '50% 50%' }}
-                    />
-                  </svg>
-                  <div style={{ position: 'absolute', fontSize: '20px', fontWeight: 'bold', color: 'black' }}>
-                    {Math.round(progress)}%
+                <div className='BG'>
+                  <div className="ProgressSSS1">
+                    <div className="GroupSSS">
+                      <span>Weekly Progress</span>
+                    </div>
+                    <svg className='progress-circle' height={radius * 2} width={radius * 2}>
+                      <circle
+                        stroke="#E6E6E6"
+                        fill="transparent"
+                        strokeWidth={strokeWidth}
+                        r={normalizedRadius}
+                        cx={radius}
+                        cy={radius}
+                      />
+                      <circle
+                        stroke="#FF7F00"
+                        fill="transparent"
+                        strokeWidth={strokeWidth}
+                        strokeDasharray={`${circumference} ${circumference}`}
+                        strokeDashoffset={strokeDashoffset}
+                        r={normalizedRadius}
+                        cx={radius}
+                        cy={radius}
+                      />
+                      <text
+                        x="50%"
+                        y="50%"
+                        alignmentBaseline="middle"
+                        textAnchor="middle"
+                        className="percentage-text"
+                      >
+                        {Math.round(progress)}%
+                      </text>
+                    </svg>
+                    <div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -77,12 +86,10 @@ function Page9() {
             </div>
             <div className="FormSSS">
               <div className="InputSSS">
-                <input type="text" placeholder='Enter your name' className="" />
-                <input type="text" placeholder='Enter your email' className="" />
-                <input type="text" placeholder='Enter your nickname' className="" />
-                {/* <input type="text" className="" /> */}
-                <textarea name="" id="">
-                </textarea>
+                <input type="text" placeholder='Your name' className="textname" />
+                <input type="email" placeholder='Email address' className="textname" />
+                <input type="text" placeholder='Web address' className="textname"/>
+                <textarea placeholder="Type message..." className='textarea'></textarea>
               </div>
               <div className="buttonsss">
                 <button>Send message now</button>
