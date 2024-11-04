@@ -1,13 +1,18 @@
 import React from 'react';
 import "./Page6.css";
+import Card1 from "../../Assets/Image (12).png";
+import Card2 from "../../Assets/Image (11).png";
+import Card3 from "../../Assets/Image (13).png";
+import Card4 from "../../Assets/Image (14).png";
+import Card5 from "../../Assets/Image (15).png";
 function Page6() {
   const services = [
-    { img: "", titlepass: "TECH", title: "Tech Cover Industry", describtion: "There are many variations of passages" },
-    { img: "", titlepass: "TECH", title: "Application Integration", describtion: "There are many variations of passages" },
-    { img: "", titlepass: "TECH", title: "Database Design", describtion: "There are many variations of passages" },
-    { img: "", titlepass: "TECH", title: "Application Integration", describtion: "There are many variations of passages" },
-    { img: "", titlepass: "TECH", title: "Database Design", describtion: "There are many variations of passages" },
-    { img: "", titlepass: "TECH", title: "Tech Cover Industry", describtion: "There are many variations of passages" },
+    { img: Card1, titlepass: "TECH", title: "Tech Cover Industry", describtion: "There are many variations of passages" },
+    { img: Card2, titlepass: "TECH", title: "Application Integration", describtion: "There are many variations of passages" },
+    { img: Card3, titlepass: "TECH", title: "Database Design", describtion: "There are many variations of passages" },
+    { img: Card4, titlepass: "TECH", title: "Application Integration", describtion: "There are many variations of passages" },
+    { img: Card5, titlepass: "TECH", title: "Database Design", describtion: "There are many variations of passages" },
+    { img: Card2, titlepass: "TECH", title: "Tech Cover Industry", describtion: "There are many variations of passages" },
   ];
 
   function ServiceCard({ img, titlepass, title, describtion }) {
@@ -18,13 +23,13 @@ function Page6() {
           <div className="FrameSSS555">
             <span>{titlepass}</span>
             <div className="Frame55SSS">
-              <span>{title}</span>
+              <h6>{title}</h6>
               <p>{describtion}</p>
             </div>
           </div>
         </div>
         <div className="AzizCardSSS">
-          <p>View all services</p>
+          <h6>View all services</h6>
         </div>
       </div>
     );
@@ -48,11 +53,6 @@ function Page6() {
               <div className="Carts00102">
                 <div className="CarddSsS01">
                   {services.slice(0, 6).map((service, index) => (
-                    <ServiceCard key={index} {...service} />
-                  ))}
-                </div>
-                <div className="CarddSsS02">
-                  {services.slice(6, 7).map((service, index) => (
                     <ServiceCard key={index} {...service} />
                   ))}
                 </div>

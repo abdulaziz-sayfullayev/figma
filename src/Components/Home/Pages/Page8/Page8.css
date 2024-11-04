@@ -1,137 +1,247 @@
-/* Umumiy Styling */
+/* .TestimonialSection {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.BGDDD {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.Heading h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.Heading p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.ReviewContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.testimonial-slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 10px;
+  flex: 1 0 20%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+  font-size: 1.2em;
+  color: gold;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.slider-button {
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: #333;
+}
+
+.slider-button.prev {
+  left: 10px;
+}
+
+.slider-button.next {
+  right: 10px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-dot.active {
+  background-color: #333;
+} */
+
+
 .TestimonialSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #111;
-    color: #fff;
-    overflow: hidden;
-  }
-  
-  .BGDDD {
-    width: 90%;
-    max-width: 1200px;
-    padding: 40px 20px;
-    background-color: #222;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  }
-  
-  .slider-title {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #fff;
-  }
-  
-  .testimonial-container {
-    display: flex;
-    transition: transform 0.5s ease; /* Slider o'zgarishi uchun yumshoq animatsiya */
-  }
-  
-  .testimonial-card {
-    min-width: 100%;
-    max-width: 300px;
-    margin: 0 10px;
-    padding: 20px;
-    background: #fff;
-    color: #333;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Card hover animatsiyasi */
-  }
-  
-  .testimonial-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Star va Foydalanuvchi ma'lumotlari Styling */
-  .stars {
-    display: flex;
-    color: #ff9505;
-    margin-bottom: 10px;
-  }
-  
-  .user-info {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-  }
-  
-  .user-info img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .user-name {
-    font-weight: bold;
-  }
-  
-  .user-role {
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  /* Tugmalar Styling */
-  .carousel-controls {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-  }
-  
-  .carousel-controls button {
-    background-color: #333;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-  }
-  
-  .carousel-controls button:hover {
-    background-color: #555;
-  }
-  
-  /* Dots Styling */
-  .carousel-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .carousel-dot {
-    width: 12px;
-    height: 12px;
-    margin: 0 5px;
-    background-color: #555;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .carousel-dot.active {
-    background-color: #ff9505; /* Aktiv dotni rangini belgilaymiz */
-  }
-  
-  .carousel-dot:hover {
-    background-color: #ff9505;
-  }
-  
-  /* Media Query */
-  @media (max-width: 768px) {
-    .BGDDD {
-      padding: 20px 10px;
-    }
-  
-    .testimonial-card {
-      max-width: 80%;
-      margin: 0 auto;
-    }
-  }
-  
+  height: 875px;
+}
+
+.BGDDD {
+  background: rgb(7, 7, 6);
+  height: 875px;
+}
+
+.Contentss222 {
+  width: 1881px;
+  height: 595px;
+  gap: 56;
+}
+
+.Text {
+  width: 1264px;
+  height: 186px;
+  padding-left: 620px;
+  margin: 56px 0px;
+  padding-top: 140px;
+}
+
+.Heading {
+  width: 1264px;
+  height: 186px;
+}
+
+.Heading>span {
+  margin: 16px 0px;
+  color: rgb(255, 255, 255);
+  font-family: 'Syne';
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 72px;
+  text-transform: capitalize;
+}
+
+.Title {
+  width: 115px;
+  height: 26px;
+  margin: 16px 0px;
+}
+
+.Title>span {
+  width: 115px;
+  height: 26px;
+  color: rgb(255, 137, 17);
+  font-family: 'Syne';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.Review {
+  width: 1881px;
+  height: 285px;
+  display: flex;
+  margin: 56px 0px;
+  margin-top: 200px;
+  padding: 0 0 0 312px;
+}
+
+.testimonial-card {
+  width: 357px;
+  height: 285px;
+  margin: 56px 12px;
+  border-radius: 5px;
+  box-shadow: 4px 11px 58px 0px rgba(0, 0, 0, 0.07);
+  background: rgb(255, 255, 255);
+}
+
+.stars {
+  width: 117.56px;
+  height: 22px;
+  margin: 12px 22px;
+}
+
+
+.testimonial-card>p {
+  width: 293px;
+  height: 122px;
+  margin: 12px 0px;
+  color: rgba(26, 29, 39, 0.6);
+  font-family: 'Syne';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 32px;
+}
+
+.user-info {
+  width: 185px;
+  height: 53px;
+  display: flex;
+  margin: -22px 32px;
+}
+
+.user-info>img {
+  width: 43px;
+  height: 43px;
+
+}
+
+.user-name {
+  width: 140px;
+  height: 26px;
+  margin: 3px 5px;
+  color: rgb(67, 74, 84);
+  font-family: 'Syne';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.user-role {
+  color: rgb(105, 110, 118);
+  font-family: 'Syne';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 147px;
+  height: 24px;
+  margin: 3px 5px;
+}
+
+
+.carousel-dots {
+  width: 72px;
+  height: 12px;
+  display: flex;
+  margin-top: 100px;
+  margin-left: 1050px;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  margin: 0px 2px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-dot.active {
+  border-radius: 4px;
+  background: rgb(255, 137, 17);
+}

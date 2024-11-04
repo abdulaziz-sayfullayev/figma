@@ -1,36 +1,228 @@
-/* Container for each card */
+/* .divCarrddSSS {
+  overflow: hidden;
+}
+
+.ProjectCartSSS {
+  transition: opacity 0.3s ease;
+}
+
+.AzizCardSSS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.divCarrddSSS:hover .ProjectCartSSS {
+  opacity: 0;
+}
+
+.divCarrddSSS:hover .AzizCardSSS {
+  opacity: 1;
+} */
+
+.ProjectsSetion {
+  height: 1426px;
+  margin-top: -300px;
+}
+
+.BG {
+  height: 1426px;
+  background: rgb(7, 7, 6);
+  margin: 10px 0px;
+}
+
+.Content001001 {
+  width: 1296px;
+  padding: 140px 312px;
+}
+
+.Text00101 {
+  width: 736px;
+  height: 250px;
+  margin: 56px 0px;
+}
+
+.Text00101>p {
+  width: 736px;
+  height: 48px;
+  margin: 16px 0px;
+  color: rgb(255, 255, 255);
+  font-family: 'Syne';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.Heading00221 {
+  width: 736px;
+  height: 186px;
+  margin: 16px 0px;
+}
+
+.Heading00221>span {
+  color: rgb(255, 255, 255);
+  font-family: 'Syne';
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 72px;
+  text-transform: capitalize;
+  width: 736px;
+  height: 144px;
+  margin: 16px 0px;
+}
+
+.TitleSSS555 {
+  width: 113px;
+  height: 26px;
+  margin: 16px 0px;
+}
+
+.TitleSSS555>span {
+  width: 113px;
+  height: 26px;
+  color: rgb(255, 137, 17);
+  font-family: 'Syne';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.Carts00102 {
+  width: 416px;
+  height: 400px;
+  display: flex;
+}
+
+.ProjectCartSSS {
+  width: 416px;
+  height: 400px;
+}
+
 .divCarrddSSS {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  /* Main content of the card (image and text) */
-  .ProjectCartSSS {
-    transition: opacity 0.3s ease;
-  }
-  
-  /* Overlay with "View all services" text */
-  .AzizCardSSS {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark background on hover */
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  /* Hover effect */
-  .divCarrddSSS:hover .ProjectCartSSS {
-    opacity: 0; /* Hide the main content */
-  }
-  
-  .divCarrddSSS:hover .AzizCardSSS {
-    opacity: 1; /* Show "View all services" text */
-  }
-  
+  width: 416px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.ProjectCartSSS {
+  background-color: white;
+  /* Default white background */
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+  /* Smooth transition for hiding content */
+  position: relative;
+  z-index: 1;
+}
+
+.ProjectCartSSS img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensure the image covers the entire area */
+}
+
+.CarddSsS01 {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: auto auto auto;
+}
+
+.FrameSSS555 {
+  background-color: white;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 368px;
+  height: 116px;
+  padding: 20px 40px 20px 24px;
+  margin: 260px 24px 24px 24px;
+}
+
+.FrameSSS555>span {
+  width: 34px;
+  height: 16px;
+  margin: 8px 0px;
+  color: rgb(127, 39, 255);
+  font-family: 'Syne';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.Frame55SSS {
+  width: 304px;
+  height: 52px;
+  margin: 8px 0px;
+}
+
+.Frame55SSS>h6 {
+  color: rgb(26, 29, 39);
+  font-family: 'Syne';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  width: 304px;
+  height: 28px;
+  margin: 0px 0px;
+}
+
+.Frame55SSS>p {
+  width: 268px;
+  height: 24px;
+  margin: 0px 0px;
+  color: rgba(26, 29, 39, 0.8);
+  font-family: 'Syne';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.AzizCardSSS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF8911;
+  color: #070706;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.AzizCardSSS>h6{
+  height: 28px;
+  margin-left: -49px;
+  margin-top: 277px;
+  color: rgb(7, 7, 6);
+  font-family: 'Syne';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+/* Hover effect */
+.divCarrddSSS:hover .ProjectCartSSS {
+  opacity: 0;
+  /* Hide main card content */
+}
+
+.divCarrddSSS:hover .AzizCardSSS {
+  opacity: 1;
+  /* Show overlay */
+}

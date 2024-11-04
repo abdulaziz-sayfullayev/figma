@@ -1,0 +1,117 @@
+.TeamSection {
+    height: 1026px;
+    padding: 140px 312px;
+}
+
+.TitleTeamSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 56px 0px;
+}
+
+.TxtTeamSection>span {
+    color: rgb(26, 29, 39);
+    font-family: 'Syne';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    text-transform: capitalize;
+}
+
+.Title>span {
+    color: rgb(127, 39, 255);
+    font-family: 'Syne';
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Action>button {
+    color: rgb(255, 137, 17);
+    font-family: 'Syne';
+    font-size: 15px;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.TeamMemberSection {
+    display: flex;
+}
+
+.Member {
+    width: 306px;
+    height: 512px;
+    margin: 0px 10px;
+}
+
+.imgDiv {
+    position: relative;
+    width: 306px;
+    height: 420px;
+}
+
+.imgDiv img {
+    width: 100%;
+    height: 100%;
+}
+
+.SocialIcons {
+    /* display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease; */
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 112px;
+    height: 32px;
+    left: 24px;
+    top: 364px;
+    display: flex;
+
+
+}
+
+.imgDiv:hover .SocialIcons {
+    opacity: 1;
+}
+
+.SocialIcons a {
+    color: white;
+    padding: 10px;
+    background-color: rgb(129, 129, 129);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.SocialIcons a:hover {
+    background-color: rgb(255, 137, 17);
+}
+
+.Txt>h6 {
+    width: 306px;
+    height: 28px;
+    color: rgb(26, 29, 39);
+    font-family: 'Syne';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-top: 32px;
+}
+
+.Txt>p {
+    width: 306px;
+    height: 24px;
+    margin: 8px 0px;
+    color: rgba(26, 29, 39, 0.6);
+    font-family: 'Syne';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}

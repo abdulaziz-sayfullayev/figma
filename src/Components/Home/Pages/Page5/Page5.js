@@ -57,23 +57,27 @@ function Page5() {
                   </div>
                   <div className="TxtTxtTxtTitlePage5divssss">
                     {accordionData.map((item, index) => (
-                      <div key={index} className="accordion-item">
-                        <div
-                          className="accordion-title"
-                          onClick={() => toggleAccordion(index)}
-                        >
-                          <h3>{item.title}</h3>
-                          <span>{activeIndex === index ? '▲' : '▼'}</span>
-                        </div>
-                        {activeIndex === index && (
-                          <div className="accordion-content">
-                            <p>{item.content}</p>
+                      <>
+                        <div onClick={() => toggleAccordion(index)} key={index} className="accordion-item">
+                          <div
+                            className="accordion-title"
+                            onClick={() => toggleAccordion(index)}
+                          >
+                            <h3>{item.title}</h3>
+                            <span>{activeIndex === index ? '▲' : '▼'}</span>
                           </div>
-                        )}
+                          {activeIndex === index && (
+                            <div className="accordion-content">
+                              <p>{item.content}</p>
+                            </div>
+                          )}
+
+                        </div>
                         <div className="divider">
                         </div>
-                      </div>
+                      </>
                     ))}
+
                   </div>
                 </div>
               </div>
@@ -81,36 +85,40 @@ function Page5() {
             <div className="Contentpage5div2">
               <span>Ready To Transform Your Business?</span>
               <div className="Contentpage5div201">
-                <div className="Contentpage5div201ServiceFeatures1">
-                  <img src={CardImg001} alt="" />
-                  <div className="TExtSSS">
-                    <h6>Tech Solution</h6>
-                    <p>Assertively streamline interactive interfaces after value-added infrastructures. Authoritatively fabricate fully tested methodologies before. Holistic deliver
-                      end sound benefits. </p>
+                <div className='dfdiv1'>
+                  <div className="Contentpage5div201ServiceFeatures1">
+                    <img src={CardImg001} alt="" />
+                    <div className="TExtSSS">
+                      <h6>Tech Solution</h6>
+                      <p>Assertively streamline interactive interfaces after value-added infrastructures. Authoritatively fabricate fully tested methodologies before. Holistic deliver
+                        end sound benefits. </p>
+                    </div>
+                  </div>
+                  <div className="Contentpage5div201ServiceFeatures1">
+                    <img src={CardImg002} alt="" />
+                    <div className="TExtSSS">
+                      <h6>IT Project Solution</h6>
+                      <p>Assertively streamline interactive interfaces after value-added infrastructures. Authoritatively fabricate fully tested methodologies before. Holistic deliver
+                        end sound benefits. </p>
+                    </div>
                   </div>
                 </div>
-                <div className="Contentpage5div201ServiceFeatures2">
-                  <img src={CardImg002} alt="" />
-                  <div className="TExtSSS">
-                    <h6>IT Project Solution</h6>
-                    <p>Assertively streamline interactive interfaces after value-added infrastructures. Authoritatively fabricate fully tested methodologies before. Holistic deliver
-                      end sound benefits. </p>
+                <div className='dfdiv1'>
+                  <div className="Contentpage5div201ServiceFeatures1">
+                    <img src={CardImg003} alt="" />
+                    <div className="TExtSSS">
+                      <h6>Quick Support</h6>
+                      <p>Assertively streamline interactive interfaces after value-added infrastructures. Authoritatively fabricate fully tested methodologies before. Holistic deliver
+                        end sound benefits. </p>
+                    </div>
                   </div>
-                </div>
-                <div className="Contentpage5div201ServiceFeatures3">
-                  <img src={CardImg003} alt="" />
-                  <div className="TExtSSS">
-                    <h6>Quick Support</h6>
-                    <p>Assertively streamline interactive interfaces after value-added infrastructures. Authoritatively fabricate fully tested methodologies before. Holistic deliver
-                      end sound benefits. </p>
-                  </div>
-                </div>
-                <div className="Contentpage5div201ServiceFeatures4">
-                  <img src={CardImg004} alt="" />
-                  <div className="TExtSSS">
-                    <h6>Solving IT Challenges</h6>
-                    <p>Assertively streamline interactive interfaces after value-added infrastructures. Authoritatively fabricate fully tested methodologies before. Holistic deliver
-                      end sound benefits. </p>
+                  <div className="Contentpage5div201ServiceFeatures1">
+                    <img src={CardImg004} alt="" />
+                    <div className="TExtSSS">
+                      <h6>Solving IT Challenges</h6>
+                      <p>Assertively streamline interactive interfaces after value-added infrastructures. Authoritatively fabricate fully tested methodologies before. Holistic deliver
+                        end sound benefits. </p>
+                    </div>
                   </div>
                 </div>
               </div>
