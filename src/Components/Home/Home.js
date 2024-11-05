@@ -10,7 +10,7 @@ import Page8 from './Pages/Page8/Page8';
 import Page9 from './Pages/Page9/Page9';
 import Page10 from './Pages/Page10/Page10';
 import Page11 from './Pages/Page11/Page11';
-
+import "./Home.css"
 
 function Home() {
   return (
@@ -18,16 +18,16 @@ function Home() {
       <Page1 />
       <Page2 />
       <Page3 />
-      <Page4 />
-      <Page5 />
-      <Page6 />
-      <Page7 />
-      <Page8 />
-      <Page9 />
-      <Page10 />
-      <Page11 />
+      {/* <Page4 /> */}
+      {/* <Page5 /> */}
+      {/* <Page6 /> */}
+      {/* <Page7 /> */}
+      {/* <Page8 /> */}
+      {/* <Page9 /> */}
+      {/* <Page10 /> */}
+      {/* <Page11 /> */}
     </div>
   )
 }
 
-export default Home
+export default Home;

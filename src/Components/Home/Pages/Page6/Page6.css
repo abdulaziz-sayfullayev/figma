@@ -193,10 +193,8 @@
 /* Hover effect */
 .divCarrddSSS:hover .ProjectCartSSS {
   opacity: 0;
-  /* Hide main card content */
 }
 
 .divCarrddSSS:hover .AzizCardSSS {
   opacity: 1;
-  /* Show overlay */
 }

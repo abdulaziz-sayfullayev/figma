@@ -1,9 +1,9 @@
-.hero-section {
+.hero-container {
     padding-top: 75px;
     z-index: 1;
 }
 
-.background {
+.hero-background {
     width: 100%;
     height: 900px;
     background-image: url('../../Assets/Home1BG1.png');
@@ -15,7 +15,7 @@
     justify-content: center;
 }
 
-.content {
+.hero-content {
     display: flex;
     flex-direction: row;
     max-width: 1522px;
@@ -27,7 +27,7 @@
     justify-content: space-between;
 }
 
-.text-content {
+.text-wrapper {
     max-width: 657px;
     display: flex;
     flex-direction: column;
@@ -37,31 +37,31 @@
     animation: fadeInLeft 1s ease-in-out;
 }
 
-.intro-text {
+.intro-wrapper {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.frame {
+.text-frame {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.title {
+.heading {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.title-bar {
+.heading-bar {
     width: 45px;
     height: 2px;
     background-color: rgb(127, 39, 255);
 }
 
-.title span {
+.heading span {
     color: rgb(127, 39, 255);
     font-family: 'Syne', sans-serif;
     font-size: 18px;
@@ -83,7 +83,7 @@
     border-radius: 4px;
 }
 
-.description {
+.description-text {
     font-family: 'Syne', sans-serif;
     font-size: 16px;
     color: rgba(26, 29, 39, 0.8);
@@ -92,13 +92,13 @@
     width: 605px;
 }
 
-.button-container {
+.button-wrapper {
     display: flex;
     gap: 16px;
 }
 
-.explore-btn,
-.video-btn {
+.service-button,
+.video-button {
     padding: 16px 32px;
     font-family: 'Syne', sans-serif;
     font-size: 15px;
@@ -111,35 +111,35 @@
     width: 232px;
 }
 
-.explore-btn {
+.service-button {
     background: rgb(7, 7, 6);
     color: white;
 }
 
-.explore-btn:hover {
+.service-button:hover {
     background-color: #ffa600;
 }
 
-.video-btn {
+.video-button {
     display: flex;
     align-items: center;
     color: rgb(26, 29, 39);
     background-color: transparent;
 }
 
-.video-btn .imgiii {
+.video-button .icon-forward {
     width: 40px;
     margin-right: 8px;
     font-size: 15px;
     transition: transform 0.3s ease;
 }
 
-.video-btn:hover .imgiii {
+.video-button:hover .icon-forward {
     transform: scale(1.1);
     color: #ffa600;
 }
 
-.image-container {
+.image-wrapper {
     display: flex;
     width: 882px;
     justify-content: center;
@@ -148,7 +148,7 @@
     animation: fadeInRight 1s ease-in-out;
 }
 
-.cardHome1Page1 {
+.card-container {
     width: 100%;
     height: 733px;
     background-image: url('../../Assets/Page1Team.png');
@@ -158,13 +158,13 @@
     position: relative;
 }
 
-.card-image-main,
-.card-image-icon {
+.team-image,
+.card-icon {
     border-radius: 6px;
     animation: bounceIn 1s ease-in-out;
 }
 
-.card-image-main {
+.team-image {
     width: 226px;
     height: 115px;
     position: absolute;
@@ -172,7 +172,7 @@
     left: -90px;
 }
 
-.card-image-icon {
+.card-icon {
     width: 203px;
     height: 134px;
     position: absolute;
@@ -180,215 +180,443 @@
     right: -50px;
 }
 
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-50px);
+@media (max-width: 1650px) {
+
+    /* Hero konteyner */
+    .hero-container {
+        padding-top: 50px;
+        /* Yuqoridan bo'sh joy */
     }
 
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(50px);
+    /* Hero fon */
+    .hero-background {
+        height: 700px;
+        /* Fon balandligini kichraytirish */
     }
 
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes bounceIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-
-    60% {
-        opacity: 1;
-        transform: scale(1.05);
+    /* Hero kontent */
+    .hero-content {
+        max-width: 90%;
+        /* Kontent kengligini o'zgartirish */
+        height: auto;
+        /* Balansni saqlash */
+        padding: 0 20px;
+        /* Kichik bo'sh joy */
+        gap: 20px;
+        /* Kichik bo'sh joy */
     }
 
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Responsive styles */
-@media (max-width: 1560px) {
-    .hero-section{
-        margin-top: -400px;
-    }
-    .background{
-        height: 1800px;
-    }
-    .content {
-        padding: 0 50px;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
+    /* Matn qutisi */
+    .text-wrapper {
+        max-width: 90%;
+        /* Kichik ekranlar uchun max-width */
+        margin-top: 15px;
+        /* Yuqoridan bo'sh joy */
+        margin-left: 20px;
+        /* Chapdan bo'sh joy */
+        gap: 16px;
+        /* Kichik bo'sh joy */
     }
 
-    .text-content {
-        align-items: center;
-        text-align: center;
+    /* Sarlavha */
+    .heading span {
+        font-size: 16px;
+        /* Sarlavha matn o'lchami */
     }
 
-    .image-container {
+    .main-text p {
+        font-size: 48px;
+        /* Kichik ekranlarda matn o'lchami */
+        line-height: 56px;
+        /* Kichik ekranlarda qator balandligi */
+    }
+
+    /* Tavsif matni */
+    .description-text {
+        font-size: 14px;
+        /* Tavsif matni o'lchami */
+        width: auto;
+        /* Kenglikni avtomatik qilish */
+    }
+
+    /* Tugmalar */
+    .service-button,
+    .video-button {
+        font-size: 14px;
+        /* Tugma matni o'lchami */
+        padding: 12px 24px;
+        /* Tugma o'lchamlarini o'zgartirish */
         width: 100%;
+        /* Tugmalarni to'liq kenglikda qilish */
+    }
+
+    /* Rasm qutisi */
+    .image-wrapper {
+        width: 100%;
+        /* Rasm qutisi kengligi */
+        margin-left: 0;
+        /* Chapdan bo'sh joyni olib tashlash */
+    }
+
+    /* Kartochka konteyneri */
+    .card-container {
+        height: 600px;
+        /* Kartochka balandligini kichraytirish */
+    }
+
+    /* Jamoa rasmi */
+    .team-image {
+        width: 180px;
+        /* Jamoa rasmi o'lchami */
+        height: auto;
+        /* Balansni saqlash */
+    }
+
+    /* Kartochka ikonkasi */
+    .card-icon {
+        width: 180px;
+        /* Kartochka ikonkasi o'lchami */
+        height: auto;
+        /* Balansni saqlash */
+    }
+}
+
+@media (max-width: 1650px) {
+
+    /* Hero konteyner */
+    .hero-container {
+        padding-top: 40px;
+        /* Yuqoridan bo'sh joy */
+    }
+
+    /* Hero fon */
+    .hero-background {
+        height: 600px;
+        /* Fon balandligini kichraytirish */
+    }
+
+    /* Hero kontent */
+    .hero-content {
+        max-width: 95%;
+        /* Kontent kengligini o'zgartirish */
+        height: auto;
+        /* Balansni saqlash */
+        padding: 0 15px;
+        /* Kichik bo'sh joy */
+        gap: 15px;
+        /* Kichik bo'sh joy */
+        flex-direction: column;
+        /* Ustun qatorga o'tish */
+        align-items: center;
+        /* Markazlashgan joylashuv */
+    }
+
+    /* Matn qutisi */
+    .text-wrapper {
+        max-width: 90%;
+        /* Kichik ekranlar uchun max-width */
+        margin-top: 20px;
+        /* Yuqoridan bo'sh joy */
+        margin-left: 0;
+        /* Chapdan bo'sh joy */
+        gap: 20px;
+        /* Kichik bo'sh joy */
+    }
+
+    .heading {
+        margin-top: 320px;
+    }
+
+    /* Sarlavha */
+    .heading span {
+        font-size: 18px;
+        /* Sarlavha matn o'lchami */
+    }
+
+    .main-text p {
+        font-size: 36px;
+        /* Kichik ekranlarda matn o'lchami */
+        line-height: 44px;
+        /* Kichik ekranlarda qator balandligi */
+        text-align: center;
+        /* Markazlashtirilgan matn */
+    }
+
+    /* Tavsif matni */
+    .description-text {
+        font-size: 14px;
+        /* Tavsif matni o'lchami */
+        width: auto;
+        /* Kenglikni avtomatik qilish */
+        text-align: center;
+        /* Markazlashtirilgan matn */
+    }
+
+    /* Tugmalar */
+    .service-button,
+    .video-button {
+        font-size: 14px;
+        /* Tugma matni o'lchami */
+        padding: 12px 24px;
+        /* Tugma o'lchamlarini o'zgartirish */
+        width: 100%;
+        /* Tugmalarni to'liq kenglikda qilish */
+        margin-top: 10px;
+        /* Tugmalar orasidagi bo'sh joy */
+    }
+
+    /* Rasm qutisi */
+    .image-wrapper {
+        width: 100%;
+        /* Rasm qutisi kengligi */
+        margin-left: 0;
+        /* Chapdan bo'sh joyni olib tashlash */
         justify-content: center;
+        /* Rasmni markazlashtirish */
+    }
+
+    /* Kartochka konteyneri */
+    .card-container {
+        height: 500px;
+        /* Kartochka balandligini kichraytirish */
+    }
+
+    /* Jamoa rasmi */
+    .team-image {
+        width: 150px;
+        /* Jamoa rasmi o'lchami */
+        height: auto;
+        /* Balansni saqlash */
+    }
+
+    /* Kartochka ikonkasi */
+    .card-icon {
+        width: 150px;
+        /* Kartochka ikonkasi o'lchami */
+        height: auto;
+        /* Balansni saqlash */
     }
 }
 
-@media (max-width: 1280px) {
-    .main-text p {
-        font-size: 60px;
-        line-height: 70px;
-    }
-}
+@media (max-width: 1650px) {
 
-@media (max-width: 1024px) {
-    .content {
-        padding: 0 30px;
+    .hero-background {
+        height: 1600px;
     }
 
-    .main-text p {
-        font-size: 54px;
-        line-height: 64px;
+    .hero-content {
+        max-width: 90%;
+        /* Kenglikni kichraytirish */
+        padding: 0 40px;
+        /* Kichik bo'sh joy */
+        gap: 30px;
+        /* Kichik bo'sh joy */
     }
 
-    .description {
-        font-size: 15px;
-    }
-
-    .button-container {
+    .text-wrapper {
+        max-width: 90%;
+        margin-top: 20px;
+        margin-left: 0;
         gap: 20px;
     }
 
-    .explore-btn {
+    .heading span {
+        font-size: 18px;
+    }
+
+    .heading {
+        margin-top: -120px;
+    }
+
+    .main-text p {
+        font-size: 64px;
+        /* Kichik ekranlarda matn o'lchami */
+        line-height: 80px;
+        /* Kichik ekranlarda qator balandligi */
+    }
+
+    .description-text {
+        font-size: 15px;
+        /* Tavsif matni o'lchami */
         width: auto;
+        text-align: center;
+    }
+
+    .service-button,
+    .video-button {
+        font-size: 15px;
+        padding: 12px 24px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .image-wrapper {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .card-container {
+        height: 600px;
+        /* Kartochka balandligini kamaytirish */
+    }
+
+    .team-image {
+        width: 200px;
+        /* Jamoa rasmi o'lchami */
+        height: auto;
+    }
+
+    .card-icon {
+        width: 200px;
+        /* Kartochka ikonkasi o'lchami */
+        height: auto;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1400px) {
+    .hero-background {
+        height: 1700px;
+        margin-top: -500px;
+    }
+
+    .main-text p {
+        font-size: 56px;
+        /* Kichik ekranlarda matn o'lchami */
+        line-height: 70px;
+        /* Kichik ekranlarda qator balandligi */
+    }
+
+    .description-text {
+        font-size: 14px;
+        /* Tavsif matni o'lchami */
+    }
+
+    .heading {
+        margin-top: 520px;
+    }
+
+    .service-button,
+    .video-button {
+        font-size: 14px;
+        /* Tugma matni o'lchami */
+    }
+
+    .team-image {
+        width: 180px;
+        /* Jamoa rasmi o'lchami */
+    }
+
+    .card-icon {
+        width: 180px;
+        /* Kartochka ikonkasi o'lchami */
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero-background {
+        height: 1500px;
+        margin-top: -400px;
+    }
+
     .main-text p {
         font-size: 48px;
-        line-height: 56px;
+        /* Kichik ekranlarda matn o'lchami */
+        line-height: 60px;
+        /* Kichik ekranlarda qator balandligi */
     }
 
-    .description {
-        font-size: 14px;
-    }
-
-    .explore-btn,
-    .video-btn {
-        padding: 12px 24px;
-        font-size: 14px;
-    }
-
-    .button-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-    }
-}
-
-@media (max-width: 800px) {
-    .main-text p {
-        font-size: 36px;
-        line-height: 44px;
-    }
-
-    .explore-btn,
-    .video-btn {
-        padding: 10px 20px;
+    .description-text {
         font-size: 13px;
+        /* Tavsif matni o'lchami */
+    }
+
+    .service-button,
+    .video-button {
+        font-size: 13px;
+        /* Tugma matni o'lchami */
+    }
+
+    .team-image {
+        width: 160px;
+        /* Jamoa rasmi o'lchami */
+    }
+
+    .card-icon {
+        width: 160px;
+        /* Kartochka ikonkasi o'lchami */
     }
 }
 
 @media (max-width: 700px) {
-    .content {
-        padding: 0 20px;
+    .hero-background {
+        height: 1500px;
     }
 
     .main-text p {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 36px;
+        /* Kichik ekranlarda matn o'lchami */
+        line-height: 48px;
+        /* Kichik ekranlarda qator balandligi */
     }
-}
 
-@media (max-width: 600px) {
-    .description {
+    .description-text {
         font-size: 12px;
+        /* Tavsif matni o'lchami */
+    }
+
+    .service-button,
+    .video-button {
+        font-size: 12px;
+        /* Tugma matni o'lchami */
+    }
+
+    .team-image {
+        width: 140px;
+        /* Jamoa rasmi o'lchami */
+    }
+
+    .card-icon {
+        width: 140px;
+        /* Kartochka ikonkasi o'lchami */
     }
 }
 
 @media (max-width: 500px) {
-    .explore-btn,
-    .video-btn {
-        padding: 8px 16px;
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 400px) {
-    .main-text p {
-        font-size: 28px;
-        line-height: 36px;
-    }
-
-    .title span {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 300px) {
-    .description {
-        font-size: 10px;
+    .hero-background {
+        height: 1500px;
+        margin-top: -500px;
     }
 
     .main-text p {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 30px;
+        /* Kichik ekranlarda matn o'lchami */
+        line-height: 40px;
+        /* Kichik ekranlarda qator balandligi */
     }
-}
 
-@media (max-width: 250px) {
-    .explore-btn,
-    .video-btn {
-        padding: 6px 12px;
+    .description-text {
         font-size: 11px;
-    }
-}
-
-@media (max-width: 200px) {
-    .title span {
-        font-size: 14px;
+        /* Tavsif matni o'lchami */
     }
 
-    .main-text p {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 150px) {
-    .main-text p {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 100px) {
-    .main-text p {
-        font-size: 18px;
+    .service-button,
+    .video-button {
+        font-size: 11px;
+        /* Tugma matni o'lchami */
     }
 
-    .description {
-        font-size: 9px;
+    .heading {
+        margin-top: 620px;
+    }
+
+    .team-image {
+        width: 120px;
+        /* Jamoa rasmi o'lchami */
+    }
+
+    .card-icon {
+        width: 120px;
+        /* Kartochka ikonkasi o'lchami */
     }
 }

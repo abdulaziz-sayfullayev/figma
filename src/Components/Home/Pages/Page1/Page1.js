@@ -7,21 +7,21 @@ import Page1Card from "../../Assets/Page1Card.svg";
 function Page1() {
     const handleClick = (e) => {
         const button = e.currentTarget;
-        button.classList.add('clicked');
+        button.classList.add('button-clicked');
         setTimeout(() => {
-            button.classList.remove('clicked');
+            button.classList.remove('button-clicked');
         }, 300);
     };
 
     return (
-        <div className="hero-section">
-            <div className="background">
-                <div className="content">
-                    <div className="text-content">
-                        <div className="intro-text">
-                            <div className="frame">
-                                <div className="title">
-                                    <span className="title-bar"></span>
+        <div className="hero-container">
+            <div className="hero-background">
+                <div className="hero-content">
+                    <div className="text-wrapper">
+                        <div className="intro-wrapper">
+                            <div className="text-frame">
+                                <div className="heading">
+                                    <span className="heading-bar"></span>
                                     <span>WELCOME TO Ztech!</span>
                                 </div>
                                 <div className="main-text">
@@ -32,22 +32,22 @@ function Page1() {
                                     </p>
                                 </div>
                             </div>
-                            <p className="description">
+                            <p className="description-text">
                                 Assertively streamline interactive interfaces after value infrastructures. We are 100+ professional software engineers ready to assist you.
                             </p>
                         </div>
-                        <div className="button-container">
-                            <button className="explore-btn" onClick={handleClick}>Explore Services</button>
-                            <button className="video-btn" onClick={handleClick}>
-                                <IoCaretForwardCircleOutline className="imgiii" />
+                        <div className="button-wrapper">
+                            <button className="service-button" onClick={handleClick}>Explore Services</button>
+                            <button className="video-button" onClick={handleClick}>
+                                <IoCaretForwardCircleOutline className="icon-forward" />
                                 Watch A Video
                             </button>
                         </div>
                     </div>
-                    <div className="image-container">
-                        <div className="cardHome1Page1">
-                            <img src={Page1Team} alt="Team" className="card-image-main" />
-                            <img src={Page1Card} alt="Card" className="card-image-icon" />
+                    <div className="image-wrapper">
+                        <div className="card-container">
+                            <img src={Page1Team} alt="Team" className="team-image" />
+                            <img src={Page1Card} alt="Card" className="card-icon" />
                         </div>
                     </div>
                 </div>

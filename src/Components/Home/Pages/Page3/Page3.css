@@ -1,22 +1,29 @@
-.AboutUs {
-    gap: 48;
-    padding: 140px 312px 140px 312px;
-}
-
-.TitlePage13Div {
-    height: 242px;
+.AboutSection {
     display: flex;
     flex-direction: column;
-    gap: 16;
-    margin: 48px 0px;
+    gap: 48px;
+    opacity: 0;
+    padding: 140px 10%;
+    animation: fadeIn 1s forwards;
 }
 
-.TitlePage13Div>p {
-    width: 1267px;
-    height: 48px;
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.TitleSection {
     display: flex;
-    gap: 16;
-    margin: 16px 0px;
+    flex-direction: column;
+    gap: 16px;
+    margin: 48px 0;
+}
+
+.TitleSection>p {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
     color: rgba(26, 29, 39, 0.6);
     font-family: 'Syne';
     font-size: 16px;
@@ -24,20 +31,15 @@
     line-height: 24px;
 }
 
-.Txt1Page3Home1 {
-    height: 178px;
-    gap: 8;
-    margin: 16px 0px;
+.TitleText {
+    gap: 8px;
 }
 
-.Txt2Page3Home1 {
-    height: 26px;
-    gap: 12;
+.SubtitleText {
+    gap: 12px;
 }
 
-.Txt2Page3Home1>span {
-    height: 26px;
-    gap: 12;
+.SubtitleText>span {
     color: rgb(127, 39, 255);
     font-family: 'Syne';
     font-size: 18px;
@@ -45,9 +47,7 @@
     line-height: 26px;
 }
 
-.Txt1Page3Home1>h3 {
-    height: 144px;
-    gap: 8;
+.TitleText>h3 {
     color: rgb(26, 29, 39);
     font-family: 'Syne';
     font-size: 64px;
@@ -55,46 +55,39 @@
     line-height: 72px;
 }
 
-.TextImageHome1page3Div2 {
-    height: 533px;
+.ImageTextSection {
     display: flex;
-    gap: 72;
-    margin: 48px 0px;
+    gap: 72px;
+    margin: -48px 0;
 }
 
-.Home1Page3Image01 {
-    height: 533px;
+.ImageContainer {
     display: flex;
     gap: 15px;
 }
 
-.OnePerson {
-    width: 255px;
-    height: 392.25px;
+.SinglePersonImage, .TeamImage {
+    width: 100%;
+    max-width: 255px;
+    height: auto;
     border-radius: 16px;
 }
 
-.TeamTwoPeople {
-    width: 317.78px;
-    height: 533px;
-    left: 256.22px;
-    border-radius: 16px;
+.TeamImage {
+    max-width: 317.78px;
 }
 
-.AzizCardsheyx {
-    height: 100px;
-    padding: 20px 30px 119px 30px;
+.ExperienceCard {
+    padding: 20px;
     border-radius: 16px;
     background: rgb(255, 137, 17);
 }
 
-.TextPage3Home1Exprience {
-    height: 203px;
-    margin: 10px 0px;
+.ExperienceText {
+    margin: 10px 0;
 }
 
-.TextPage3Home1Exprience>h1 {
-    height: 40px;
+.ExperienceText>h1 {
     color: rgb(7, 7, 6);
     font-family: 'Syne';
     font-size: 40px;
@@ -102,56 +95,40 @@
     line-height: 24px;
 }
 
-.TextPage3Home1Exprience>p {
+.ExperienceText>p {
     color: rgb(7, 7, 6);
     font-family: 'Syne';
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
-    height: 20px;
-    width: 200px;
 }
 
-.TextHome1Page013 {
-    width: 650px;
-    height: 426px;
-    gap: 40;
+.DescriptionContainer {
+    width: 100%;
+    max-width: 650px;
     margin: 0px 72px;
 }
 
-.TextTextHome1Page3 {
-    width: 650px;
-    height: 330px;
-    gap: 24;
-    margin: 40px 0px;
+.DescriptionText {
+    width: 100%;
+    margin: 40px 0;
 }
 
-.Frame1Page3Home1 {
-    width: 650px;
-    height: 141px;
-    gap: 16;
-    margin: 24px 0px;
+.FrameOne, .FrameTwo {
+    width: 100%;
+    margin: 24px 0;
 }
 
-.Frame1Page3Home1>span {
-    width: 650px;
-    height: 56px;
-    gap: 16;
-    margin: 16px 0px;
+.FrameOne>span, .FrameTwo>span {
     color: rgb(26, 29, 39);
     font-family: 'Syne';
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
-    letter-spacing: 0px;
     text-transform: capitalize;
 }
 
-.Frame1Page3Home1>p {
-    width: 650px;
-    height: 69px;
-    gap: 16;
-    margin: 16px 0px;
+.FrameOne>p, .FrameTwo>p {
     color: rgba(26, 29, 39, 0.6);
     font-family: 'Syne';
     font-size: 14px;
@@ -159,1130 +136,167 @@
     line-height: 23px;
 }
 
-.LinePage3Home1 {
-    width: 650px;
+.SeparatorLine {
+    width: 100%;
     height: 0;
-    margin: 24px 0px;
+    margin: 24px 0;
     border: 1px solid rgba(255, 137, 17, 0.6);
 }
 
-.Frame2Page3Home1 {
-    width: 650px;
-    height: 141px;
-    gap: 16;
-    margin: 24px 0px;
+.ActionSection {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin: 40px 0;
 }
 
-.Frame2Page3Home1>span {
-    color: rgb(26, 29, 39);
-    font-family: 'Syne';
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
-    text-transform: capitalize;
-    width: 650px;
-    height: 56px;
-    gap: 16;
-    margin: 16px 0px;
-}
-
-.Frame2Page3Home1>p {
-    width: 650px;
-    height: 69px;
-    gap: 16;
-    margin: 16px 0px;
-    color: rgba(26, 29, 39, 0.6);
-    font-family: 'Syne';
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 23px;
-}
-
-.ActionPage3Home1 {
-    width: 218px;
-    height: 56px;
-    gap: 28;
-    margin: 40px 0px;
-}
-
-.ActionPage3Home1>button {
+.MoreAboutButton {
     color: rgb(255, 255, 255);
     font-family: 'Syne';
     font-size: 13px;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 1px;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px;
     margin: 0px 8px;
     border-radius: 6px;
     background: rgb(7, 7, 6);
-    width: 218px;
-    height: 56px;
     border: none;
     outline: none;
     cursor: pointer;
     text-transform: uppercase;
 }
 
-
-@media (max-width: 1440px) {
-    .AboutUs {
-        padding: 100px 80px;
-        gap: 36px;
-    }
-
-    .TitlePage13Div {
-        height: auto;
-        margin: 40px 0;
-        gap: 14px;
-    }
-
-    .TitlePage13Div>p {
-        width: 100%;
-        font-size: 15px;
-        line-height: 22px;
-        margin: 12px 0;
-    }
-
-    .Txt1Page3Home1>h3 {
-        font-size: 48px;
-        line-height: 56px;
-    }
-
-    .Txt2Page3Home1>span {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .TextImageHome1page3Div2 {
-        flex-direction: column;
-        align-items: center;
-        gap: 48px;
-        margin: 40px 0;
-    }
-
-    .OnePerson, .TeamTwoPeople {
-        width: 100%;
-        height: auto;
-        max-width: 300px;
-        border-radius: 12px;
-    }
-
-    .AzizCardsheyx {
-        padding: 18px 25px;
-    }
-
-    .TextPage3Home1Exprience>h1 {
-        font-size: 32px;
-    }
-
-    .TextPage3Home1Exprience>p {
-        font-size: 18px;
-        width: 100%;
-    }
-
-    .TextHome1Page013 {
-        width: 90%;
-        margin: 30px 0;
-    }
-
-    .TextTextHome1Page3 {
-        width: 90%;
-        margin: 30px 0;
-        gap: 20px;
-    }
-
-    .Frame1Page3Home1, .Frame2Page3Home1 {
-        width: 90%;
-        margin: 20px 0;
-    }
-
-    .Frame1Page3Home1>span, .Frame2Page3Home1>span {
-        font-size: 22px;
-    }
-
-    .Frame1Page3Home1>p, .Frame2Page3Home1>p {
-        font-size: 13px;
-        line-height: 22px;
-    }
-
-    .LinePage3Home1 {
-        width: 90%;
-        margin: 20px 0;
-    }
-
-    .ActionPage3Home1 {
-        width: 100%;
-        margin: 30px 0;
-    }
-
-    .ActionPage3Home1>button {
-        width: 100%;
-        padding: 18px;
-        font-size: 14px;
-        border-radius: 5px;
+@media (max-width: 1850px) {
+    .AboutSection {
+        padding: 100px 5%;
     }
 }
 
-@media (max-width: 1240px) {
-    .AboutUs {
-        padding: 80px 40px;
-        gap: 32px;
-    }
-
-    .TitlePage13Div {
-        height: auto;
-        margin: 32px 0;
-        gap: 12px;
-    }
-
-    .TitlePage13Div>p {
-        width: 100%;
-        font-size: 14px;
-        line-height: 20px;
-        margin: 10px 0;
-    }
-
-    .Txt1Page3Home1>h3 {
-        font-size: 40px;
-        line-height: 48px;
-    }
-
-    .Txt2Page3Home1>span {
-        font-size: 15px;
-        line-height: 22px;
-    }
-
-    .TextImageHome1page3Div2 {
-        flex-direction: column;
+@media (max-width: 1400px) {
+    .ImageTextSection {
+        display: block;
         align-items: center;
-        gap: 40px;
-        margin: 32px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-items: center;
+        margin: 0 auto;
     }
 
-    .OnePerson, .TeamTwoPeople {
-        width: 100%;
-        height: auto;
-        max-width: 280px;
-        border-radius: 12px;
+    .DescriptionContainer {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-items: center;
+        margin: 0 auto;
     }
+}
 
-    .AzizCardsheyx {
-        padding: 15px 20px;
-    }
-
-    .TextPage3Home1Exprience>h1 {
-        font-size: 28px;
-    }
-
-    .TextPage3Home1Exprience>p {
-        font-size: 16px;
-        width: 100%;
-    }
-
-    .TextHome1Page013 {
-        width: 85%;
-        margin: 24px 0;
-    }
-
-    .TextTextHome1Page3 {
-        width: 85%;
-        margin: 24px 0;
-        gap: 18px;
-    }
-
-    .Frame1Page3Home1, .Frame2Page3Home1 {
-        width: 85%;
-        margin: 18px 0;
-    }
-
-    .Frame1Page3Home1>span, .Frame2Page3Home1>span {
-        font-size: 20px;
-    }
-
-    .Frame1Page3Home1>p, .Frame2Page3Home1>p {
-        font-size: 12px;
-        line-height: 20px;
-    }
-
-    .LinePage3Home1 {
-        width: 85%;
-        margin: 18px 0;
-    }
-
-    .ActionPage3Home1 {
-        width: 100%;
-        margin: 24px 0;
-    }
-
-    .ActionPage3Home1>button {
-        width: 100%;
-        padding: 16px;
-        font-size: 13px;
-        border-radius: 4px;
+@media (max-width: 1280px) {
+    .AboutSection {
+        padding: 100px 5%;
     }
 }
 
 @media (max-width: 1024px) {
-    .AboutUs {
-        padding: 60px 20px;
-        gap: 24px;
+    .AboutSection {
+        padding: 80px 5%;
     }
 
-    .TitlePage13Div {
-        height: auto;
-        margin: 24px 0;
-        gap: 10px;
+    .TitleText>h3 {
+        font-size: 48px;
+        line-height: 56px;
     }
 
-    .TitlePage13Div>p {
-        width: 100%;
-        font-size: 13px;
-        line-height: 18px;
-        margin: 8px 0;
-    }
-
-    .Txt1Page3Home1>h3 {
+    .ExperienceText>h1 {
         font-size: 32px;
-        line-height: 40px;
     }
 
-    .Txt2Page3Home1>span {
-        font-size: 14px;
-        line-height: 20px;
+    .SinglePersonImage,
+    .TeamImage {
+        max-width: 200px;
     }
 
-    .TextImageHome1page3Div2 {
+    .ActionSection {
         flex-direction: column;
         align-items: center;
-        gap: 32px;
-        margin: 24px 0;
-    }
-
-    .OnePerson, .TeamTwoPeople {
-        width: 100%;
-        height: auto;
-        max-width: 250px;
-        border-radius: 10px;
-    }
-
-    .AzizCardsheyx {
-        padding: 10px 15px;
-    }
-
-    .TextPage3Home1Exprience>h1 {
-        font-size: 24px;
-    }
-
-    .TextPage3Home1Exprience>p {
-        font-size: 14px;
-        width: 100%;
-    }
-
-    .TextHome1Page013, .TextTextHome1Page3, .Frame1Page3Home1, .Frame2Page3Home1 {
-        width: 90%;
-        margin: 20px 0;
-    }
-
-    .Frame1Page3Home1>span, .Frame2Page3Home1>span {
-        font-size: 18px;
-    }
-
-    .Frame1Page3Home1>p, .Frame2Page3Home1>p {
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    .LinePage3Home1 {
-        width: 90%;
-        margin: 20px 0;
-    }
-
-    .ActionPage3Home1 {
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    .ActionPage3Home1>button {
-        width: 100%;
-        padding: 14px;
-        font-size: 12px;
-        border-radius: 4px;
-    }
-}
-
-@media (max-width: 1720px) {
-    .AboutUs {
-        padding: 100px 150px;
-        gap: 36px;
-    }
-
-    .TitlePage13Div {
-        height: auto;
-        margin: 36px 0;
-        gap: 14px;
-    }
-
-    .TitlePage13Div>p {
-        width: 100%;
-        font-size: 15px;
-        line-height: 22px;
-        margin: 12px 0;
-    }
-
-    .Txt1Page3Home1>h3 {
-        font-size: 54px;
-        line-height: 64px;
-    }
-
-    .Txt2Page3Home1>span {
-        font-size: 16px;
-        line-height: 22px;
-    }
-
-    .TextImageHome1page3Div2 {
-        gap: 50px;
-        margin: 36px 0;
-    }
-
-    .OnePerson, .TeamTwoPeople {
-        width: 90%;
-        max-width: 300px;
-        border-radius: 14px;
-    }
-
-    .AzizCardsheyx {
-        padding: 15px 25px;
-    }
-
-    .TextPage3Home1Exprience>h1 {
-        font-size: 34px;
-    }
-
-    .TextPage3Home1Exprience>p {
-        font-size: 18px;
-        width: 90%;
-    }
-
-    .TextHome1Page013, .TextTextHome1Page3, .Frame1Page3Home1, .Frame2Page3Home1 {
-        width: 85%;
-        margin: 28px 0;
-    }
-
-    .Frame1Page3Home1>span, .Frame2Page3Home1>span {
-        font-size: 22px;
-    }
-
-    .Frame1Page3Home1>p, .Frame2Page3Home1>p {
-        font-size: 13px;
-        line-height: 20px;
-    }
-
-    .LinePage3Home1 {
-        width: 85%;
-        margin: 28px 0;
-    }
-
-    .ActionPage3Home1 {
-        width: 220px;
-        margin: 30px 0;
-    }
-
-    .ActionPage3Home1>button {
-        width: 100%;
-        padding: 18px;
-        font-size: 12px;
-        border-radius: 5px;
-    }
-}
-
-
-@media (max-width: 1620px) {
-    .AboutUs {
-        padding: 100px 120px;
-        gap: 32px;
-    }
-
-    .TitlePage13Div {
-        height: auto;
-        margin: 32px 0;
-        gap: 12px;
-    }
-
-    .TitlePage13Div>p {
-        width: 100%;
-        font-size: 14px;
-        line-height: 22px;
-        margin: 12px 0;
-    }
-
-    .Txt1Page3Home1>h3 {
-        font-size: 50px;
-        line-height: 60px;
-    }
-
-    .Txt2Page3Home1>span {
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .TextImageHome1page3Div2 {
-        gap: 48px;
-        margin: 32px 0;
-    }
-
-    .OnePerson, .TeamTwoPeople {
-        width: 85%;
-        max-width: 280px;
-        border-radius: 12px;
-    }
-
-    .AzizCardsheyx {
-        padding: 15px 25px;
-    }
-
-    .TextPage3Home1Exprience>h1 {
-        font-size: 32px;
-    }
-
-    .TextPage3Home1Exprience>p {
-        font-size: 16px;
-        width: 85%;
-    }
-
-    .TextHome1Page013, .TextTextHome1Page3, .Frame1Page3Home1, .Frame2Page3Home1 {
-        width: 80%;
-        margin: 24px 0;
-    }
-
-    .Frame1Page3Home1>span, .Frame2Page3Home1>span {
-        font-size: 20px;
-    }
-
-    .Frame1Page3Home1>p, .Frame2Page3Home1>p {
-        font-size: 13px;
-        line-height: 20px;
-    }
-
-    .LinePage3Home1 {
-        width: 80%;
-        margin: 24px 0;
-    }
-
-    .ActionPage3Home1 {
-        width: 200px;
-        margin: 30px 0;
-    }
-
-    .ActionPage3Home1>button {
-        width: 100%;
-        padding: 16px;
-        font-size: 12px;
-        border-radius: 5px;
-    }
-}
-
-
-@media (max-width: 900px) {
-    .AboutUs {
-        padding: 80px 40px;
-        /* Kichik ekranlar uchun paddingni kamaytirish */
-        gap: 24px;
-        /* Bo'shliqni kamaytirish */
-    }
-
-    .TitlePage13Div {
-        height: auto;
-        /* Buni avvalgi kabi saqlab qolsangiz bo'ladi */
-        margin: 24px 0;
-        /* Marginni kamaytirish */
-        gap: 8px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .TitlePage13Div>p {
-        width: 100%;
-        /* To'liq kenglik */
-        font-size: 12px;
-        /* Kichik o'lcham */
-        line-height: 18px;
-        /* Kichik bo'shliqlar */
-        margin: 8px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .Txt1Page3Home1>h3 {
-        font-size: 40px;
-        /* Kichik o'lcham */
-        line-height: 50px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .Txt2Page3Home1>span {
-        font-size: 14px;
-        /* Kichik o'lcham */
-        line-height: 18px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .TextImageHome1page3Div2 {
-        gap: 24px;
-        /* Kichik bo'shliq */
-        margin: 24px 0;
-        /* Marginni kamaytirish */
-        flex-direction: column;
-        /* Vertikal joylashuv */
-    }
-
-    .OnePerson, .TeamTwoPeople {
-        width: 90%;
-        /* Kichik ekranlarda kenglikni oshirish */
-        max-width: 100%;
-        /* To'liq kenglik */
-        border-radius: 10px;
-        /* Burchaklarni yumshatish */
-    }
-
-    .AzizCardsheyx {
-        padding: 15px 20px;
-        /* Kichik ekranlar uchun paddingni kamaytirish */
-    }
-
-    .TextPage3Home1Exprience>h1 {
-        font-size: 28px;
-        /* Kichik o'lcham */
-    }
-
-    .TextPage3Home1Exprience>p {
-        font-size: 14px;
-        /* Kichik o'lcham */
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-    }
-
-    .TextHome1Page013, .TextTextHome1Page3, .Frame1Page3Home1, .Frame2Page3Home1 {
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-        margin: 20px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .Frame1Page3Home1>span, .Frame2Page3Home1>span {
-        font-size: 18px;
-        /* Kichik o'lcham */
-    }
-
-    .Frame1Page3Home1>p, .Frame2Page3Home1>p {
-        font-size: 12px;
-        /* Kichik o'lcham */
-        line-height: 18px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .LinePage3Home1 {
-        width: 100%;
-        /* To'liq kenglik */
-        margin: 20px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .ActionPage3Home1 {
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-        margin: 20px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .ActionPage3Home1>button {
-        width: 100%;
-        /* To'liq kenglik */
-        padding: 16px;
-        /* Paddingni oshirish */
-        font-size: 12px;
-        /* Kichik o'lcham */
-        border-radius: 5px;
-        /* Burchaklarni yumshatish */
+        gap: 20px;
     }
 }
 
 @media (max-width: 768px) {
-    .AboutUs {
-        padding: 60px 20px;
-        /* Kichik ekranlar uchun paddingni yanada kamaytirish */
-        gap: 20px;
-        /* Bo'shliqni kamaytirish */
+    .AboutSection {
+        padding: 60px 5%;
     }
 
-    .TitlePage13Div {
-        height: auto;
-        /* Buni avvalgi kabi saqlab qolsangiz bo'ladi */
-        margin: 16px 0;
-        /* Marginni kamaytirish */
-        gap: 6px;
-        /* Kichik bo'shliqlar */
+    .TitleText>h3 {
+        font-size: 36px;
+        line-height: 44px;
     }
 
-    .TitlePage13Div>p {
-        width: 100%;
-        /* To'liq kenglik */
-        font-size: 10px;
-        /* Kichik o'lcham */
-        line-height: 16px;
-        /* Kichik bo'shliqlar */
-        margin: 4px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .Txt1Page3Home1>h3 {
-        font-size: 32px;
-        /* Kichik o'lcham */
-        line-height: 40px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .Txt2Page3Home1>span {
-        font-size: 12px;
-        /* Kichik o'lcham */
-        line-height: 16px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .TextImageHome1page3Div2 {
-        gap: 16px;
-        /* Kichik bo'shliq */
-        margin: 16px 0;
-        /* Marginni kamaytirish */
+    .ImageTextSection {
         flex-direction: column;
-        /* Vertikal joylashuv */
+        align-items: center;
     }
 
-    .OnePerson, .TeamTwoPeople {
-        width: 100%;
-        /* Kichik ekranlarda kenglikni oshirish */
-        max-width: 100%;
-        /* To'liq kenglik */
-        border-radius: 8px;
-        /* Burchaklarni yumshatish */
+    .DescriptionContainer {
+        margin: 0 16px;
     }
 
-    .AzizCardsheyx {
-        padding: 10px 15px;
-        /* Kichik ekranlar uchun paddingni kamaytirish */
-    }
-
-    .TextPage3Home1Exprience>h1 {
-        font-size: 24px;
-        /* Kichik o'lcham */
-    }
-
-    .TextPage3Home1Exprience>p {
-        font-size: 12px;
-        /* Kichik o'lcham */
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-    }
-
-    .TextHome1Page013, .TextTextHome1Page3, .Frame1Page3Home1, .Frame2Page3Home1 {
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-        margin: 16px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .Frame1Page3Home1>span, .Frame2Page3Home1>span {
-        font-size: 18px;
-        /* Kichik o'lcham */
-    }
-
-    .Frame1Page3Home1>p, .Frame2Page3Home1>p {
-        font-size: 10px;
-        /* Kichik o'lcham */
-        line-height: 14px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .LinePage3Home1 {
-        width: 100%;
-        /* To'liq kenglik */
-        margin: 16px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .ActionPage3Home1 {
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-        margin: 16px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .ActionPage3Home1>button {
-        width: 100%;
-        /* To'liq kenglik */
-        padding: 12px;
-        /* Paddingni oshirish */
-        font-size: 11px;
-        /* Kichik o'lcham */
-        border-radius: 5px;
-        /* Burchaklarni yumshatish */
+    .MoreAboutButton {
+        padding: 15px 30px;
     }
 }
 
-@media (max-width: 568px) {
-    .AboutUs {
-        padding: 40px 16px;
-        /* Kichik ekranlar uchun paddingni kamaytirish */
-        gap: 16px;
-        /* Bo'shliqni kamaytirish */
+@media (max-width: 600px) {
+    .TitleText>h3 {
+        font-size: 28px;
     }
 
-    .TitlePage13Div {
-        margin: 12px 0;
-        /* Marginni kamaytirish */
-        gap: 4px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .TitlePage13Div>p {
-        width: 100%;
-        /* To'liq kenglik */
-        font-size: 9px;
-        /* Kichik o'lcham */
-        line-height: 14px;
-        /* Kichik bo'shliqlar */
-        margin: 2px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .Txt1Page3Home1>h3 {
-        font-size: 24px;
-        /* Kichik o'lcham */
-        line-height: 32px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .Txt2Page3Home1>span {
-        font-size: 10px;
-        /* Kichik o'lcham */
-        line-height: 12px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .TextImageHome1page3Div2 {
-        gap: 8px;
-        /* Kichik bo'shliq */
-        margin: 12px 0;
-        /* Marginni kamaytirish */
-        flex-direction: column;
-        /* Vertikal joylashuv */
-    }
-
-    .OnePerson, .TeamTwoPeople {
-        width: 100%;
-        /* Kichik ekranlarda kenglikni oshirish */
-        max-width: 100%;
-        /* To'liq kenglik */
-        border-radius: 8px;
-        /* Burchaklarni yumshatish */
-    }
-
-    .AzizCardsheyx {
-        padding: 10px 10px;
-        /* Kichik ekranlar uchun paddingni kamaytirish */
-    }
-
-    .TextPage3Home1Exprience>h1 {
-        font-size: 20px;
-        /* Kichik o'lcham */
-    }
-
-    .TextPage3Home1Exprience>p {
-        font-size: 10px;
-        /* Kichik o'lcham */
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-    }
-
-    .TextHome1Page013, .TextTextHome1Page3, .Frame1Page3Home1, .Frame2Page3Home1 {
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-        margin: 12px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .Frame1Page3Home1>span, .Frame2Page3Home1>span {
+    .ExperienceText>p {
         font-size: 16px;
-        /* Kichik o'lcham */
     }
 
-    .Frame1Page3Home1>p, .Frame2Page3Home1>p {
-        font-size: 8px;
-        /* Kichik o'lcham */
-        line-height: 12px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .LinePage3Home1 {
-        width: 100%;
-        /* To'liq kenglik */
-        margin: 12px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .ActionPage3Home1 {
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-        margin: 12px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .ActionPage3Home1>button {
-        width: 100%;
-        /* To'liq kenglik */
-        padding: 10px;
-        /* Paddingni kamaytirish */
-        font-size: 10px;
-        /* Kichik o'lcham */
-        border-radius: 5px;
-        /* Burchaklarni yumshatish */
+    .SinglePersonImage,
+    .TeamImage {
+        max-width: 100%;
     }
 }
 
-@media (max-width: 468px) {
-    .AboutUs {
-        padding: 20px 10px;
-        /* Paddingni yana kamaytirish */
-        gap: 8px;
-        /* Bo'shliqlarni kamaytirish */
-    }
-
-    .TitlePage13Div {
-        margin: 8px 0;
-        /* Marginni kamaytirish */
-        gap: 2px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .TitlePage13Div>p {
-        width: 100%;
-        /* To'liq kenglik */
-        font-size: 8px;
-        /* Kichik o'lcham */
-        line-height: 12px;
-        /* Kichik bo'shliqlar */
-        margin: 0;
-        /* Marginni yo'q qilish */
-    }
-
-    .Txt1Page3Home1>h3 {
-        font-size: 20px;
-        /* Kichik o'lcham */
-        line-height: 28px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .Txt2Page3Home1>span {
-        font-size: 8px;
-        /* Kichik o'lcham */
-        line-height: 10px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .TextImageHome1page3Div2 {
-        gap: 4px;
-        /* Kichik bo'shliq */
-        margin: 8px 0;
-        /* Marginni kamaytirish */
-        flex-direction: column;
-        /* Vertikal joylashuv */
-    }
-
-    .OnePerson, .TeamTwoPeople {
-        width: 100%;
-        /* Kichik ekranlarda kenglikni oshirish */
-        max-width: 100%;
-        /* To'liq kenglik */
-        border-radius: 4px;
-        /* Burchaklarni yumshatish */
-    }
-
-    .AzizCardsheyx {
-        padding: 5px 5px;
-        /* Kichik ekranlar uchun paddingni kamaytirish */
-    }
-
-    .TextPage3Home1Exprience>h1 {
-        font-size: 18px;
-        /* Kichik o'lcham */
-    }
-
-    .TextPage3Home1Exprience>p {
-        font-size: 8px;
-        /* Kichik o'lcham */
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-    }
-
-    .TextHome1Page013, .TextTextHome1Page3, .Frame1Page3Home1, .Frame2Page3Home1 {
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-        margin: 8px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .Frame1Page3Home1>span, .Frame2Page3Home1>span {
-        font-size: 14px;
-        /* Kichik o'lcham */
-    }
-
-    .Frame1Page3Home1>p, .Frame2Page3Home1>p {
-        font-size: 6px;
-        /* Kichik o'lcham */
-        line-height: 10px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .LinePage3Home1 {
-        width: 100%;
-        /* To'liq kenglik */
-        margin: 8px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .ActionPage3Home1 {
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-        margin: 8px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .ActionPage3Home1>button {
-        width: 100%;
-        /* To'liq kenglik */
-        padding: 5px;
-        /* Paddingni kamaytirish */
-        font-size: 8px;
-        /* Kichik o'lcham */
-        border-radius: 4px;
-        /* Burchaklarni yumshatish */
-    }
-}
-
-@media (max-width: 300px) {
-    .AboutUs {
-        padding: 10px 5px;
-        /* Paddingni yana kamaytirish */
-        gap: 4px;
-        /* Bo'shliqlarni kamaytirish */
-    }
-
-    .TitlePage13Div {
-        margin: 4px 0;
-        /* Marginni kamaytirish */
-        gap: 2px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .TitlePage13Div>p {
-        width: 100%;
-        /* To'liq kenglik */
-        font-size: 6px;
-        /* Kichik o'lcham */
-        line-height: 8px;
-        /* Kichik bo'shliqlar */
-        margin: 0;
-        /* Marginni yo'q qilish */
-    }
-
-    .Txt1Page3Home1>h3 {
-        font-size: 16px;
-        /* Kichik o'lcham */
-        line-height: 20px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .Txt2Page3Home1>span {
-        font-size: 6px;
-        /* Kichik o'lcham */
-        line-height: 8px;
-        /* Kichik bo'shliqlar */
-    }
-
-    .TextImageHome1page3Div2 {
-        gap: 2px;
-        /* Kichik bo'shliq */
-        margin: 4px 0;
-        /* Marginni kamaytirish */
-        flex-direction: column;
-        /* Vertikal joylashuv */
-    }
-
-    .OnePerson, .TeamTwoPeople {
-        width: 100%;
-        /* Kichik ekranlarda kenglikni oshirish */
-        max-width: 100%;
-        /* To'liq kenglik */
-        border-radius: 4px;
-        /* Burchaklarni yumshatish */
-    }
-
-    .AzizCardsheyx {
-        padding: 5px 5px;
-        /* Kichik ekranlar uchun paddingni kamaytirish */
-    }
-
-    .TextPage3Home1Exprience>h1 {
-        font-size: 14px;
-        /* Kichik o'lcham */
-    }
-
-    .TextPage3Home1Exprience>p {
-        font-size: 6px;
-        /* Kichik o'lcham */
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-    }
-
-    .TextHome1Page013, .TextTextHome1Page3, .Frame1Page3Home1, .Frame2Page3Home1 {
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-        margin: 4px 0;
-        /* Marginni kamaytirish */
-    }
-
-    .Frame1Page3Home1>span, .Frame2Page3Home1>span {
+@media (max-width: 480px) {
+    .MoreAboutButton {
         font-size: 12px;
-        /* Kichik o'lcham */
+        padding: 10px 20px;
     }
 
-    .Frame1Page3Home1>p, .Frame2Page3Home1>p {
-        font-size: 4px;
-        /* Kichik o'lcham */
-        line-height: 6px;
-        /* Kichik bo'shliqlar */
+    .ActionSection {
+        justify-content: center;
+        gap: 10px;
     }
 
-    .LinePage3Home1 {
-        width: 100%;
-        /* To'liq kenglik */
-        margin: 4px 0;
-        /* Marginni kamaytirish */
+    .ExperienceText>h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 375px) {
+    .AboutSection {
+        padding: 40px 2%;
     }
 
-    .ActionPage3Home1 {
-        width: 100%;
-        /* Kenglikni to'liq qilish */
-        margin: 4px 0;
-        /* Marginni kamaytirish */
+    .SeparatorLine {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .TitleText>h3 {
+        font-size: 20px;
     }
 
-    .ActionPage3Home1>button {
-        width: 100%;
-        /* To'liq kenglik */
-        padding: 5px;
-        /* Paddingni kamaytirish */
-        font-size: 6px;
-        /* Kichik o'lcham */
-        border-radius: 4px;
-        /* Burchaklarni yumshatish */
+    .ExperienceText>h1 {
+        font-size: 20px;
     }
 }

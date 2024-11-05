@@ -1,313 +1,19 @@
-/* .Funfacts {
-    height: 218px;
-    display: flex;
-    padding: 0px 312px 0px 312px;
-    background: rgb(7, 7, 6);
-
-}
-
-.FunFact {
-    width: 1296px;
-    height: 218px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 56px 0px 56px 0px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 10px 0px;
-}
-
-.Fact1 {
-    width: 200px;
-    height: 106px;
-    display: flex;
-    gap: 8;
-    display: block;
-    padding: 0px;
-    margin: 0px 10px;
-}
-
-.Fact1>span {
-    width: 149px;
-    height: 72px;
-    display: flex;
-    gap: 8;
-    margin: 8px 0px;
-    color: rgb(255, 137, 17);
-    font-family: 'Syne';
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 72px;
-    text-align: left;
-}
-
-.Fact1>p {
-    width: 200px;
-    height: 26px;
-    display: flex;
-    margin: 8px 0px;
-    color: rgb(255, 255, 255);
-    font-family: 'Syne';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-}
-
-.Page2Line1 {
-    width: 80px;
-    height: 0;
-    margin: 0px 10px;
-    transform: rotate(90.00deg);
-    border: 1px solid rgb(71, 72, 74);
-}
-
-
-.Fact2 {
-    width: 200px;
-    height: 106px;
-    display: flex;
-    gap: 8;
-    display: block;
-    padding: 0px;
-    margin: 0px 10px;
-}
-
-.Fact2>span {
-    width: 149px;
-    height: 72px;
-    display: flex;
-    gap: 8;
-    margin: 8px 0px;
-    color: rgb(255, 137, 17);
-    font-family: 'Syne';
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 72px;
-    text-align: left;
-}
-
-.Fact2>p {
-    width: 200px;
-    height: 26px;
-    display: flex;
-    margin: 8px 0px;
-    color: rgb(255, 255, 255);
-    font-family: 'Syne';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-}
-
-.Page2Line2 {
-    width: 80px;
-    height: 0;
-    margin: 0px 10px;
-    transform: rotate(90.00deg);
-    border: 1px solid rgb(71, 72, 74);
-}
-
-.Fact3 {
-    width: 200px;
-    height: 106px;
-    display: flex;
-    gap: 8;
-    display: block;
-    padding: 0px;
-    margin: 0px 10px;
-}
-
-.Fact3>span {
-    width: 149px;
-    height: 72px;
-    display: flex;
-    gap: 8;
-    margin: 8px 0px;
-    color: rgb(255, 137, 17);
-    font-family: 'Syne';
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 72px;
-    text-align: left;
-}
-
-.Fact3>p {
-    width: 200px;
-    height: 26px;
-    display: flex;
-    margin: 8px 0px;
-    color: rgb(255, 255, 255);
-    font-family: 'Syne';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-}
-
-.Page2Line3 {
-    width: 80px;
-    height: 0;
-    margin: 0px 10px;
-    transform: rotate(90.00deg);
-    border: 1px solid rgb(71, 72, 74);
-}
-
-
-.Fact4 {
-    width: 200px;
-    height: 106px;
-    display: flex;
-    gap: 8;
-    display: block;
-    padding: 0px;
-    margin: 0px 10px;
-}
-
-.Fact4>span {
-    width: 149px;
-    height: 72px;
-    display: flex;
-    gap: 8;
-    margin: 8px 0px;
-    color: rgb(255, 137, 17);
-    font-family: 'Syne';
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 72px;
-    text-align: left;
-}
-
-.Fact4>p {
-    width: 200px;
-    height: 26px;
-    display: flex;
-    margin: 8px 0px;
-    color: rgb(255, 255, 255);
-    font-family: 'Syne';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-} */
-
-
-
-/* .funfacts-section {
+.statistics-section {
     background-color: rgb(7, 7, 6);
     padding: 40px 312px;
     display: flex;
     justify-content: center;
 }
 
-.Funfacts {
+.statistics-container {
     height: 218px;
     display: flex;
     background: rgb(7, 7, 6);
 }
 
-.FunFact {
+.statistic-item {
     width: 1296px;
     height: 218px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 56px 0px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 10px 0px;
-}
-
-.Fact {
-    width: 200px;
-    height: 106px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0px 10px;
-}
-
-.Fact > span {
-    color: rgb(255, 137, 17);
-    font-family: 'Syne';
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 72px;
-    text-align: left;
-}
-
-.Fact > p {
-    color: rgb(255, 255, 255);
-    font-family: 'Syne';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-}
-
-.divider {
-    width: 80px;
-    border: 1px solid rgb(71, 72, 74);
-    transform: rotate(90deg);
-    margin: 0px 10px;
-}
-
-@media (max-width: 1440px) {
-    .funfacts-section {
-        padding: 40px 200px;
-    }
-    .Funfacts {
-        padding: 0 200px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .funfacts-section {
-        padding: 40px 50px;
-    }
-    .Funfacts {
-        padding: 0 50px;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .FunFact {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .divider {
-        width: 60px;
-        height: 1px;
-        transform: rotate(0deg);
-    }
-} */
-
-
-
-.funfacts-section {
-    background-color: rgb(7, 7, 6);
-    padding: 40px 312px;
-    display: flex;
-    justify-content: center;
-}
-
-.Funfacts {
-    height: auto;
-    /* Changed to auto for better adaptability */
-    display: flex;
-    background: rgb(7, 7, 6);
-    flex-wrap: wrap;
-    /* Allow wrapping for smaller screens */
-}
-
-.FunFact {
-    width: 100%;
-    /* Full width for better responsiveness */
-    max-width: 1296px;
-    /* Maximum width */
-    height: auto;
-    /* Changed to auto for better adaptability */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -316,19 +22,16 @@
     margin: 10px 0;
 }
 
-.Fact {
+.counter {
     width: 200px;
-    max-width: 100px;
-    /* Set maximum width to 100px */
-    height: auto;
-    /* Changed to auto for better adaptability */
+    height: 106px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0px 10px;
+    margin: 0 10px;
 }
 
-.Fact>span {
+.counter>span {
     color: rgb(255, 137, 17);
     font-family: 'Syne';
     font-size: 64px;
@@ -337,7 +40,7 @@
     text-align: left;
 }
 
-.Fact>p {
+.counter>p {
     color: rgb(255, 255, 255);
     font-family: 'Syne';
     font-size: 18px;
@@ -345,91 +48,354 @@
     line-height: 26px;
 }
 
-.divider {
-    width: 80px;
-    border: 1px solid rgb(71, 72, 74);
-    transform: rotate(90deg);
-    margin: 0px 10px;
+.line-separator {
+    width: 2px;
+    height: 60px;
+    background-color: rgb(71, 72, 74);
+    margin: 0 10px;
+}
+
+@media (max-width: 1650px) {
+    .statistics-section {
+        padding: 40px 150px;
+    }
+
+    .statistics-container {
+        padding: 0 150px;
+    }
+
+    .statistic-item {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .counter {
+        width: 180px;
+    }
 }
 
 @media (max-width: 1440px) {
-    .funfacts-section {
-        padding: 40px 200px;
+    .statistics-section {
+        padding: 40px 100px;
     }
 
-    .FunFact {
+    .statistics-container {
+        padding: 0 100px;
+    }
+
+    .statistic-item {
         padding: 40px 0;
-        /* Adjust padding for smaller screens */
+    }
+
+    .counter {
+        width: 150px;
+        margin: 50px;
     }
 }
 
+@media (max-width: 1400px) {
+    .counter {
+        margin: 50px;
+    }
+}
+@media (max-width: 1300px) {
+    .counter {
+        margin: 30px;
+    }
+}
+@media (max-width: 1200px) {
+    .counter {
+        width: 150px;
+        margin: 30px;
+    }
+}
+@media (max-width: 1100px) {
+    .counter {
+        width: 150px;
+        margin: 15px;
+    }
+}
 @media (max-width: 1024px) {
-    .funfacts-section {
-        padding: 40px 50px;
+    .statistics-section {
+        padding: 40px 30px;
+        height: 900px;
     }
 
-    .FunFact {
-        padding: 30px 0;
-        /* Further reduced padding */
+    .statistics-container {
+        padding: 0 30px;
+        justify-content: center;
     }
 
-    .Fact {
-        width: 100%;
-        /* Full width for smaller screens */
-        max-width: 100px;
-        /* Maintain maximum width of 100px */
+    .statistic-item {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .counter {
+        width: 120px;
+        margin: 40px;
     }
 }
 
 @media (max-width: 768px) {
-    .FunFact {
+    .statistic-item {
         flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        /* Center items in column layout */
+        gap: 15px;
+        padding: 20px;
     }
 
-    .divider {
+    .line-separator {
         width: 60px;
         height: 1px;
-        transform: rotate(0deg);
+    }
+    .statistics-section {
+        margin-top: 80px;
+    }
+}
+@media (max-width: 1000px) {
+    .statistics-section {
+        margin-top: 80px;
+    }
+}
+@media (max-width: 900px) {
+    .statistics-section {
+        margin-top: 80px;
+    }
+}
+@media (max-width: 480px) {
+    .statistics-section {
+        padding: 20px 15px;
+        margin-top: 120px;
     }
 
-    .Fact {
-        width: 100%;
-        /* Full width on small screens */
-        max-width: 100px;
-        /* Maintain maximum width of 100px */
-        align-items: center;
-        /* Center align text */
+    .statistic-item {
+        width: auto;
+        padding: 10px;
     }
 
-    .Fact>span {
-        font-size: 48px;
-        /* Reduce font size */
+    .counter {
+        width: 100px;
     }
 
-    .Fact>p {
-        font-size: 16px;
-        /* Adjust paragraph font size */
+    .counter>span {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .counter>p {
+        font-size: 14px;
     }
 }
 
-@media (max-width: 480px) {
-    .FunFact {
-        padding: 20px 0;
-        /* Further reduced padding */
+@media (max-width: 320px) {
+    .statistics-section {
+        padding: 10px 5px;
+        margin-top: 150px;
     }
 
-    .Fact>span {
-        font-size: 36px;
-        /* Smaller font size for very small screens */
-        line-height: 48px;
-        /* Adjust line height */
+    .statistic-item {
+        padding: 5px;
     }
 
-    .Fact>p {
-        font-size: 14px;
-        /* Smaller paragraph font size */
+    .counter>span {
+        font-size: 30px;
+        line-height: 36px;
     }
+
+    .counter>p {
+        font-size: 12px;
+    }
+}
+
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Slide In Animation */
+@keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+.slide-in {
+    animation: slideIn 0.5s ease forwards;
+}
+
+/* Zoom In Animation */
+@keyframes zoomIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+.zoom-in {
+    animation: zoomIn 0.5s ease forwards;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+.bounce {
+    animation: bounce 1s forwards;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+.pulse {
+    animation: pulse 1s infinite;
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.rotate {
+    animation: rotate 1s linear infinite;
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+.shake {
+    animation: shake 0.5s forwards;
+}
+
+/* Flip Animation */
+@keyframes flip {
+    from { transform: rotateY(0); }
+    to { transform: rotateY(180deg); }
+}
+.flip {
+    animation: flip 0.5s forwards;
+}
+
+/* Fade Up Animation */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+    animation: fadeUp 0.5s ease forwards;
+}
+
+/* Fade Down Animation */
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.fade-down {
+    animation: fadeDown 0.5s ease forwards;
+}
+
+/* Expand Animation */
+@keyframes expand {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+.expand {
+    animation: expand 0.5s ease forwards;
+}
+
+/* Wobble Animation */
+@keyframes wobble {
+    0%, 100% { transform: translateX(0); }
+    15% { transform: translateX(-10px); }
+    30% { transform: translateX(10px); }
+    45% { transform: translateX(-10px); }
+    60% { transform: translateX(10px); }
+}
+.wobble {
+    animation: wobble 0.5s forwards;
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.slide-up {
+    animation: slideUp 0.5s ease forwards;
+}
+
+/* Slide Down Animation */
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.slide-down {
+    animation: slideDown 0.5s ease forwards;
+}
+
+/* Fade Left Animation */
+@keyframes fadeLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+.fade-left {
+    animation: fadeLeft 0.5s ease forwards;
+}
+
+/* Fade Right Animation */
+@keyframes fadeRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+.fade-right {
+    animation: fadeRight 0.5s ease forwards;
+}
+
+/* Light Speed In Animation */
+@keyframes lightSpeedIn {
+    0% { transform: translateX(100%); opacity: 0; }
+    60% { opacity: 1; transform: translateX(-30px); }
+    100% { transform: translateX(0); }
+}
+.light-speed-in {
+    animation: lightSpeedIn 0.5s ease forwards;
+}
+
+/* Rolling In Animation */
+@keyframes rollIn {
+    from { opacity: 0; transform: translateX(-100%) rotate(30deg); }
+    to { opacity: 1; transform: translateX(0) rotate(0); }
+}
+.roll-in {
+    animation: rollIn 0.5s ease forwards;
+}
+
+/* Slide and Fade Animation */
+@keyframes slideAndFade {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.slide-and-fade {
+    animation: slideAndFade 0.5s ease forwards;
+}
+
+/* Jello Animation */
+@keyframes jello {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1) skewX(-10deg); }
+    50% { transform: scale(1) skewX(10deg); }
+    75% { transform: scale(1.1) skewX(-10deg); }
+    100% { transform: scale(1); }
+}
+.jello {
+    animation: jello 0.5s forwards;
 }
