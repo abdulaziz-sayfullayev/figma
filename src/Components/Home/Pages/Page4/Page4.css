@@ -72,6 +72,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    margin-top: 180px;
 }
 
 .ServiceFeature {
@@ -274,8 +275,7 @@
     display: flex;
 }
 
-.divv{
-}
+.divv {}
 
 
 .divv2 {
@@ -323,4 +323,149 @@
     height: 28px;
     margin-left: 14px;
     margin-top: -46px;
+}
+
+@media (max-width: 1650px) {
+    .Content001Page4Home1 {
+        padding: 140px 160px;
+    }
+
+    .Heading>p {
+        font-size: 62px;
+        line-height: 70px;
+    }
+
+    .Textsss>p {
+        font-size: 18px;
+    }
+}
+
+/* 1600px */
+@media (max-width: 1600px) {
+    .Content001Page4Home1 {
+        padding: 130px 140px;
+    }
+
+    .Heading>p {
+        font-size: 60px;
+        line-height: 68px;
+    }
+
+    .Textsss>p {
+        font-size: 17px;
+    }
+}
+
+/* 1550px */
+@media (max-width: 1550px) {
+    .Content001Page4Home1 {
+        padding: 120px 100px;
+    }
+
+    .Heading>p {
+        font-size: 58px;
+        line-height: 66px;
+    }
+
+    .Textsss>p {
+        font-size: 16px;
+    }
+}
+
+/* 1500px */
+@media (max-width: 1500px) {
+    .Content001Page4Home1 {
+        padding: 110px 50px;
+    }
+
+    .Heading>p {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    .Textsss>p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .Content001Page4Home1 {
+        padding: 100px 40px;
+    }
+
+    .Heading>p {
+        font-size: 54px;
+        line-height: 62px;
+    }
+
+    .Textsss>p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .Content001Page4Home1 {
+        padding: 90px 0px;
+    }
+    .divv,.divv2{
+        width: 506px;
+        padding-left: 100px;
+    }
+    .Heading>p {
+        width: 1100px;
+    }
+    .Textsss>p {
+        width: 1040px;
+        margin-top: -15px;
+    }
+    .ServiceFeature {
+        margin-top: -200px;
+    }
+    .aaazzz {
+        margin-top: -200px;
+        margin-left: 60px;
+    }
+    .BGPage4Home1 {
+        padding: 0;
+        height: 1800px;
+    }
+    .Content001Page4Home1{
+        display: block;
+    }
+}
+
+@media (max-width: 1330px) {
+    .divv,.divv2{
+        width: 406px;
+    }
+    .Heading>p {
+        width: 1100px;
+    }
+    .Textsss>p {
+        margin-top: -15px;
+    }
+    .ServiceFeature {
+        margin-top: -200px;
+    }
+    .aaazzz {
+        margin-top: -200px;
+        margin-left: 60px;
+    }
+    .BGPage4Home1 {
+        padding: 0;
+        height: 1800px;
+    }
+    .Content001Page4Home1{
+        display: block;
+    }
+    .Textss {
+        width: 43px;
+        height: 855px;
+        margin: 0px 0px;
+        margin-left: 50px;
+    }
+    .Cardds {
+        margin-left: -60px;
+    }
 }
