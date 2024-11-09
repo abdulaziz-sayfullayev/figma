@@ -1,12 +1,13 @@
 .TeamSection {
-    height: 1026px;
-    padding: 140px 312px;
+    height: auto; /* Fixed heightdan qochish */
+    padding: 140px 5%;
+    overflow: hidden; /* Scrollni oldini olish uchun */
 }
 
 .TitleTeamSection {
     display: flex;
     justify-content: space-between;
-    margin: 56px 0px;
+    margin: 56px 0;
 }
 
 .TxtTeamSection>span {
@@ -34,22 +35,24 @@
     border: none;
     cursor: pointer;
     transition: 0.3s ease;
+    padding: 20px 0 0;
 }
 
 .TeamMemberSection {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .Member {
-    width: 306px;
-    height: 512px;
-    margin: 0px 10px;
+    width: 100%;
+    height: auto;
 }
 
 .imgDiv {
     position: relative;
-    width: 306px;
-    height: 420px;
+    width: 100%;
+    height: auto;
 }
 
 .imgDiv img {
@@ -58,24 +61,14 @@
 }
 
 .SocialIcons {
-    /* display: flex;
-    gap: 10px;
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s ease; */
     position: absolute;
     opacity: 0;
     transition: opacity 0.3s ease;
     width: 112px;
     height: 32px;
     left: 24px;
-    top: 364px;
+    top: 80%;
     display: flex;
-
-
 }
 
 .imgDiv:hover .SocialIcons {
@@ -95,8 +88,6 @@
 }
 
 .Txt>h6 {
-    width: 306px;
-    height: 28px;
     color: rgb(26, 29, 39);
     font-family: 'Syne';
     font-size: 24px;
@@ -106,12 +97,124 @@
 }
 
 .Txt>p {
-    width: 306px;
-    height: 24px;
-    margin: 8px 0px;
     color: rgba(26, 29, 39, 0.6);
     font-family: 'Syne';
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    margin: 8px 0;
+}
+
+@media (max-width: 1850px) {
+    .TeamSection {
+        padding: 140px 4%;
+    }
+    .TxtTeamSection>span {
+        font-size: 54px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .TeamSection {
+        padding: 140px 3%;
+    }
+    .TitleTeamSection {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .TeamSection {
+        padding: 140px 2%;
+    }
+}
+
+@media (max-width: 600px) {
+    .TxtTeamSection>span {
+        font-size: 32px;
+    }
+}
+
+.TeamSection {
+    height: auto;
+    padding: 140px 15vw;
+}
+
+/* Asosiy media queries */
+@media (max-width: 1500px) {
+    .TeamSection {
+        padding: 120px 10vw;
+    }
+    .Member, .imgDiv {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .TeamSection {
+        padding: 100px 5vw;
+    }
+    .Member, .imgDiv {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .TeamSection {
+        padding: 80px 3vw;
+    }
+    .TeamMemberSection {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .Member, .imgDiv {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .TxtTeamSection>span {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 800px) {
+    .TeamSection {
+        padding: 40px 3vw;
+    }
+    .TxtTeamSection > span {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 600px) {
+    .TeamSection {
+        padding: 20px 2vw;
+    }
+    .TxtTeamSection > span {
+        font-size: 30px;
+    }
+    .Title > span, .Action > button {
+        font-size: 14px;
+    }
+    .Member, .imgDiv {
+        width: 100%;
+    }
+    .SocialIcons {
+        width: 80px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .TeamSection {
+        padding: 10px 2vw;
+    }
+    .TxtTeamSection > span {
+        font-size: 28px;
+    }
+    .Title > span, .Action > button {
+        font-size: 12px;
+    }
 }

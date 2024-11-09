@@ -1,6 +1,6 @@
 .GetInTouch {
     height: 1072px;
-    margin: 140px 312px 140px 0px;
+    margin: 340px 312px 140px 0px;
     display: flex;
 }
 
@@ -196,4 +196,242 @@
     margin-top: 20px;
     outline: none;
     border: none;
+}
+
+
+@media (max-width:1850px) {
+    .GetInTouch {
+        height: 1072px;
+        margin: 340px 112px 100px 0px;
+        display: flex;
+    }
+
+    .Image {
+        width: 744px;
+        height: 792px;
+        margin: 0px 138px;
+    }
+}
+
+@media (max-width:1730px) {
+    .GetInTouch {
+        height: 1072px;
+        margin: 340px 0px 100px 0px;
+        display: flex;
+    }
+
+    .Image {
+        width: 644px;
+        height: 792px;
+        margin: 0px 138px;
+    }
+}
+
+@media (max-width:1650px) {
+    .GetInTouch {
+        height: 1072px;
+        margin: 340px 0px 0px 0px;
+        display: flex;
+    }
+
+    .Image {
+        width: 644px;
+        height: 792px;
+    }
+
+    .Imgwww {
+        width: 880px;
+        height: 664px;
+        display: flex;
+    }
+
+    .BacgroudBlack {
+        width: 680px;
+        height: 664px;
+        border-radius: 0px 16px 16px 0px;
+    }
+
+    .TxtASS01>h3 {
+        width: 476px;
+        height: 144px;
+        font-size: 54px;
+    }
+
+    .TxtASS01Sivsss>span {
+        font-size: 16px;
+    }
+
+    .FormSSS {
+        width: 406px;
+        height: 440px;
+        margin: 30px 0px;
+    }
+
+    .textname {
+        width: 476px;
+        height: 56px;
+    }
+
+    .textarea {
+        width: 476px;
+        height: 160px;
+    }
+
+    .buttonsss>button {
+        width: 476px;
+    }
+
+}
+
+@media (max-width:1600px) {
+    .GetInTouch {
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    .Imgwww {
+        margin-left: 200px;
+    }
+
+    .TxtASS {
+        margin-left: 200px;
+    }
+
+    .textname {
+        width: 1000px;
+    }
+
+    .textarea {
+        width: 1000px;
+    }
+
+    .buttonsss>button {
+        width: 1000px;
+    }
+
+    .GetInTouch {
+        padding-bottom: 200px;
+    }
+}
+
+@media (max-width:1400px) {
+    .GetInTouch {
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    .Imgwww {
+        margin-left: 130px;
+    }
+
+    .TxtASS {
+        margin-left: 130px;
+    }
+
+    .textname {
+        width: 1000px;
+    }
+
+    .textarea {
+        width: 1000px;
+    }
+
+    .buttonsss>button {
+        width: 1000px;
+    }
+
+    .GetInTouch {
+        padding-bottom: 200px;
+    }
+}
+
+@media (max-width:1200px) {
+    .GetInTouch {
+        display: block;
+        margin-bottom: 100px;
+        width: 100%;
+    }
+
+    .Imgwww {
+        margin-left: 50px;
+    }
+
+    .Imgwww>img {
+        width: 700px;
+    }
+
+    .TxtASS {
+        width: 700px;
+        margin-left: 50px;
+    }
+
+    .textname,
+    .textarea,
+    .buttonsss>button {
+        width: 700px;
+    }
+    .BG{
+        display: none;
+    }
+}
+
+@media (max-width:1000px) {
+    .GetInTouch {
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    .Imgwww {
+        margin-left: 130px;
+        width: 380px;
+    }
+
+    .TxtASS {
+        margin-left: 130px;
+    }
+}
+
+@media (max-width:900px) {
+    .GetInTouch {
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    .Imgwww {
+        margin-left: 30px;
+    }
+
+    .TxtASS {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:800px) {
+    .GetInTouch {
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    .Imgwww {
+        margin-left: 30px;
+    }
+
+    .TxtASS {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:700px) {
+    .GetInTouch {
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    .Imgwww {
+        margin-left: 30px;
+    }
+
+    .TxtASS {
+        margin-left: 30px;
+    }
 }

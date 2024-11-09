@@ -1,36 +1,52 @@
+html,body{
+  overflow-x: hidden;
+}
 .home {
   position: relative;
-  overflow: hidden;
-  max-width: 1920px; /* Maksimal kenglik */
-  margin: 0 auto; /* Markazlashtirish */
+  overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+
 }
 
 .page {
   position: relative;
-  height: 100vh; /* Har bir sahna to'liq ekran balandligi */
-  opacity: 0; /* Dastlabki ko'rinmas holat */
-  transform: translateY(30px); /* Dastlab pastga siljigan holat */
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* O'zgarishning tezligi */
+  height: 100vh;
+  /* Har bir sahna to'liq ekran balandligi */
+  opacity: 0;
+  /* Dastlabki ko'rinmas holat */
+  transform: translateY(30px);
+  /* Dastlab pastga siljigan holat */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  /* O'zgarishning tezligi */
 }
 
 .page.show {
-  opacity: 1; /* Sahna ko'rinadigan holat */
-  transform: translateY(0); /* Sahna ekranda o'rnashgan */
+  opacity: 1;
+  /* Sahna ko'rinadigan holat */
+  transform: translateY(0);
+  /* Sahna ekranda o'rnashgan */
 }
 
 .page {
   position: relative;
-  opacity: 0; /* Dastlabki ko'rinmas holat */
-  transform: translateY(30px); /* Dastlab pastga siljigan holat */
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* O'zgarishning tezligi */
+  opacity: 0;
+  /* Dastlabki ko'rinmas holat */
+  transform: translateY(30px);
+  /* Dastlab pastga siljigan holat */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  /* O'zgarishning tezligi */
 }
 
 .page.show {
-  opacity: 1; /* Sahna ko'rinadigan holat */
-  transform: translateY(0); /* Sahna ekranda o'rnashgan */
+  opacity: 1;
+  /* Sahna ko'rinadigan holat */
+  transform: translateY(0);
+  /* Sahna ekranda o'rnashgan */
 }
 
 /* Page2 uchun alohida balandlik */
 .page2 {
-  height: 240px; /* Page2 balandligi */
+  height: 240px;
+  /* Page2 balandligi */
 }

@@ -1,45 +1,85 @@
 .CTAASSS {
     height: 472px;
-    background: url('../../Assets/CTA.png');
-    padding: 120px 546px 217px 546px;
+    background: url('../../Assets/CTA.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 140px;
+    padding: 120px 20px; /* Responsive padding */
 }
 
 .ContentSASSS {
-    width: 828px;
-    height: 232px;
+    max-width: 828px;
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
 
-.ContentSASSS>h1 {
-    width: 828px;
-    height: 144px;
-    margin: 32px 0px;
+.ContentSASSS > h1 {
     color: rgb(255, 255, 255);
-    font-family: 'Syne';
+    font-family: 'Syne', sans-serif;
     font-size: 64px;
     font-weight: 700;
-    text-align: center;
-    line-height: 72px;
+    margin: 32px 0;
+    line-height: 1.2;
     text-transform: capitalize;
 }
 
-.buttonssss>button {
+.buttonssss {
+    margin-top: 32px;
+}
+
+.buttonssss > button {
     width: 186px;
     height: 56px;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px;
     border-radius: 6px;
     background: rgb(7, 7, 6);
     color: rgb(255, 255, 255);
-    font-family: 'Syne';
+    font-family: 'Syne', sans-serif;
     font-size: 15px;
     font-weight: 500;
-    line-height: 16px;
     letter-spacing: 1px;
     text-align: center;
-    outline: none;
     border: none;
     cursor: pointer;
 }
-.buttonssss{
-    margin: 32px 321px;
+
+/* Media queries */
+@media (max-width: 1850px) {
+    .ContentSASSS > h1 {
+        font-size: 48px;
+    }
+}
+@media (max-width: 1500px) {
+    .ContentSASSS {
+        max-width: 700px;
+    }
+    .CTAASSS{
+        margin-top: 710px;
+    }
+}
+@media (max-width: 1150px) {
+    .CTAASSS{
+        margin-top: 1510px;
+    }
+}
+@media (max-width: 1300px) {
+    .ContentSASSS {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .ContentSASSS {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ContentSASSS > h1 {
+        font-size: 36px;
+    }
 }

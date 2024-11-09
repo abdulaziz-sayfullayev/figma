@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Page8.css';
 import Slideimg1 from '../../Assets/#Avatar.png';
 import Slideimg2 from '../../Assets/#Avatar(1).png';
@@ -16,39 +16,24 @@ const reviews = [
 
 function Page8() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
-  const autoSlideRef = useRef();
 
-  const totalSlides = Math.ceil(reviews.length / 4); // Har bir slayderda 4 ta foydalanuvchi ko'rinadi.
-
-  const goToNextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+  const cardsPerRow = () => {
+    if (window.innerWidth >= 1920) return 4;
+    if (window.innerWidth >= 1860) return 4;
+    if (window.innerWidth >= 1440) return 3;
+    if (window.innerWidth >= 1000) return 2;
+    if (window.innerWidth >= 800) return 1;
+    return 1;
   };
 
-  const goToPrevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
+  const totalSlides = Math.ceil(reviews.length / cardsPerRow());
+
+  const handleDotClick = (index) => {
+    setCurrentIndex(index);
   };
-
-  useEffect(() => {
-    if (!isHovered) {
-      autoSlideRef.current = setInterval(goToNextSlide, 3000);
-    }
-    return () => clearInterval(autoSlideRef.current);
-  }, [isHovered]);
-
-  const handleMouseMove = () => {
-    setIsHovered(true);
-    clearInterval(autoSlideRef.current);
-    autoSlideRef.current = setTimeout(() => {
-      setIsHovered(false);
-    }, 3);
-  };
-
-  // Har bir slayderda 4 ta foydalanuvchini ko'rsatadi.
-  const visibleReviews = reviews.slice(currentIndex * 4, currentIndex * 4 + 4);
 
   return (
-    <div onMouseMove={handleMouseMove} className="TestimonialSection">
+    <div className="TestimonialSection">
       <div className="BGDDD">
         <div className="Contentss222">
           <div className="Text">
@@ -60,31 +45,32 @@ function Page8() {
             </div>
           </div>
           <div className="Review">
-            {visibleReviews.map((review) => (
-              <div className="testimonial-card" key={review.id}>
+            {reviews.slice(currentIndex * cardsPerRow(), (currentIndex + 1) * cardsPerRow()).map((review) => (
+              <div key={review.id} className="testimonial-card">
                 <div className="stars">
-                  {'★'.repeat(review.rating)}{''.repeat(5 - review.rating)}
+                  {"★".repeat(review.rating)}{" "}
+                  {"☆".repeat(5 - review.rating)}
                 </div>
                 <p>{review.text}</p>
                 <div className="user-info">
                   <img src={review.img} alt={review.name} />
                   <div>
-                    <p className="user-name">{review.name}</p>
-                    <p className="user-role">{review.role}</p>
+                    <div className="user-name">{review.name}</div>
+                    <div className="user-role">{review.role}</div>
                   </div>
                 </div>
               </div>
             ))}
           </div>
-            <div className="carousel-dots">
-              {Array.from({ length: totalSlides }).map((_, index) => (
-                <div
-                  key={index}
-                  className={`carousel-dot ${index === currentIndex ? 'active' : ''}`}
-                  onClick={() => setCurrentIndex(index)}
-                ></div>
-              ))}
-            </div>
+          <div className="carousel-dots">
+            {Array(totalSlides).fill(null).map((_, index) => (
+              <div
+                key={index}
+                className={`carousel-dot ${index === currentIndex ? "active" : ""}`}
+                onClick={() => handleDotClick(index)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
